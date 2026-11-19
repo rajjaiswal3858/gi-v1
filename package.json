@@ -1,0 +1,15 @@
+{
+  "name": "hatchworks-replica",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static front-end replica of hatchworks.com for local study (not affiliated with HatchWorks).",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "serve": "node scripts/serve.mjs",
+    "dev": "node scripts/build.mjs && node scripts/serve.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,392 @@
+[
+ {
+  "route": "/",
+  "title": "HatchWorks AI • Less AI Hype. More Results.",
+  "description": "We help enterprises turn AI into ROI by automating high-impact work and building AI-native products grounded in your data.",
+  "bodyClass": "home wp-singular page-template-default page page-id-15878 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-15878 elementor-page-28205"
+ },
+ {
+  "route": "/about-us/",
+  "title": "About Us | HatchWorks AI",
+  "description": "We are a team that believes AI should earn its place, by doing real work and delivering real outcomes grounded in your data. This is how we got here.",
+  "bodyClass": "wp-singular page-template-default page page-id-29970 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-29970 elementor-page-28202"
+ },
+ {
+  "route": "/agentic-ai-automation/",
+  "title": "Agentic AI Automation | HatchWorks AI",
+  "description": "Redesign workflows from first principles, then build AI agents that can reason, take action, and work across your systems.",
+  "bodyClass": "wp-singular page-template-default page page-id-33491 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-33491 elementor-page-28202"
+ },
+ {
+  "route": "/agentic-opportunity-finder/",
+  "title": "Agentic Opportunity Finder | HatchWorks AI",
+  "description": "Our AI Agent Assessment evaluates your workflows, uncovers high-value automation opportunities, and provides a clear, actionable roadmap to implement AI—so",
+  "bodyClass": "wp-singular page-template-default page page-id-35064 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-35064 elementor-page-28202"
+ },
+ {
+  "route": "/ai-change-management/",
+  "title": "Generative-Driven Development™ | HatchWorks AI",
+  "description": "The AI-native operating model for building software by HatchWorks AI.",
+  "bodyClass": "wp-singular page-template-default page page-id-36279 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-36279 elementor-page-28202"
+ },
+ {
+  "route": "/ai-native-product-development-services/",
+  "title": "AI-Native Product Development Services | HatchWorks AI",
+  "description": "Launch new AI-native products or reinvent the ones you already have with AI at the core.",
+  "bodyClass": "wp-singular page-template-default page page-id-32797 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-32797 elementor-page-28202"
+ },
+ {
+  "route": "/ai-opportunity-finder/",
+  "title": "Agentic Opportunity Finder | HatchWorks AI",
+  "description": "Our AI Agent Assessment evaluates your workflows, uncovers high-value automation opportunities, and provides a clear, actionable roadmap to implement AI—so",
+  "bodyClass": "wp-singular page-template-default page page-id-35064 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-35064 elementor-page-28202"
+ },
+ {
+  "route": "/ai-strategy-roadmap/",
+  "title": "AI Strategy & Roadmap Services (GenROI) | HatchWorks AI",
+  "description": "Turn AI ideas into an actionable roadmap with GenROI—our AI-powered, strategist-led approach to identifying and prioritizing AI opportunities.",
+  "bodyClass": "wp-singular page-template-default page page-id-32526 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-32526 elementor-page-28202"
+ },
+ {
+  "route": "/anthropic/",
+  "title": "HatchWorks AI on Anthropic | Put Claude to Work Inside Your Business | HatchWorks AI",
+  "description": "What makes ours different",
+  "bodyClass": "wp-singular page-template-default page page-id-35338 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-35338 elementor-page-28202"
+ },
+ {
+  "route": "/careers/",
+  "title": "Careers - Engineering & Product Design Jobs | HatchWorks AI",
+  "description": "Explore career opportunities at HatchWorks! Discover our innovative and collaborative culture, learn about our values, benefits, and open positions, and find out how you can become a part of our mission to create a brighter future through technology.",
+  "bodyClass": "wp-singular page-template-default page page-id-28960 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-28960 elementor-page-28202"
+ },
+ {
+  "route": "/case-studies/",
+  "title": "Our Work | HatchWorks AI",
+  "description": "See for yourself how HatchWorks enables companies to launch new products, provide powerful data insights, and redefine customer experiences.",
+  "bodyClass": "wp-singular page-template-default page page-id-23823 page-parent wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-23823 elementor-page-28202"
+ },
+ {
+  "route": "/case-studies/ai-airspace-insights-made-simple/",
+  "title": "AI-Powered Airspace Intelligence for Cities, Airports, and Public Safety | HatchWorks AI",
+  "description": "DronePort Network's Meerir connects a real-time ADS-B feed to an LLM so airport managers and city planners can ask what's flying overhead and get answers in seconds.",
+  "bodyClass": "wp-singular page-template-default page page-id-34027 page-child parent-pageid-23823 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-34027 elementor-page-28202"
+ },
+ {
+  "route": "/case-studies/ai-driven-video-platform-improves-healthcare-literacy-at-scale/",
+  "title": "AI-Driven Video Platform Improves Healthcare Literacy at Scale | HatchWorks AI",
+  "description": "Anchor Healthcare launched an AI video engine with custom physician avatars. 282 explainer videos at launch, 80 videos per hour per physician once configured.",
+  "bodyClass": "wp-singular page-template-default page page-id-33820 page-child parent-pageid-23823 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-33820 elementor-page-28202"
+ },
+ {
+  "route": "/case-studies/ai-for-underwriting-improving-real-estate-investment-decisions-with-ai/",
+  "title": "Scaling Real Estate Underwriting with AI | HatchWorks AI",
+  "description": "HatchWorks AI designed and delivered a machine learning underwriting system for Grandview Homes, a distressed property acquisition business in the US Midwest.",
+  "bodyClass": "wp-singular page-template-default page page-id-36216 page-child parent-pageid-23823 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-36216 elementor-page-28202"
+ },
+ {
+  "route": "/case-studies/ai-strategy-to-a-multi-agent-ai-platform/",
+  "title": "Turning AI Strategy into a Scalable Intelligence Layer for Commercial Real Estate | HatchWorks AI",
+  "description": "How a national commercial real estate firm went from AI strategy to a production multi-agent Intelligence Layer on Google Cloud, with 70+ users across knowledge Q&A, BOV and OM generation, and lease abstraction.",
+  "bodyClass": "wp-singular page-template-default page page-id-36512 page-child parent-pageid-23823 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-36512 elementor-page-28202"
+ },
+ {
+  "route": "/case-studies/ai-virtual-assistant-aircraft-maintenance/",
+  "title": "An AI Virtual Assistant for Faster, Smarter Aircraft Maintenance | HatchWorks AI",
+  "description": "AVA, the Aero Star Virtual Assistant, surfaces aircraft maintenance history from Corridor with RAG and text-to-SQL so technicians resolve work orders faster.",
+  "bodyClass": "wp-singular page-template-default page page-id-34410 page-child parent-pageid-23823 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-34410 elementor-page-28202"
+ },
+ {
+  "route": "/case-studies/conversational-intelligence-across-52-franchise-locations/",
+  "title": "From Disconnected Systems to Conversational Intelligence Across 52+ Franchise Locations | HatchWorks AI",
+  "description": "K9 Resorts now has a centralized, enterprise-grade data platform that unifies operational and financial data across 52+ franchise locations for the first time.",
+  "bodyClass": "wp-singular page-template-default page page-id-36194 page-child parent-pageid-23823 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-36194 elementor-page-28202"
+ },
+ {
+  "route": "/case-studies/designintelligence/",
+  "title": "Helping a Global Architecture Company Define and Realize Their MVP | HatchWorks AI",
+  "description": "DesignIntelligence launched an MVP talent-matching platform for architecture firms and professionals in three months, with anonymous profiles and reciprocal connections.",
+  "bodyClass": "wp-singular page-template-default page page-id-29544 page-child parent-pageid-23823 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-29544 elementor-page-28202"
+ },
+ {
+  "route": "/case-studies/diebold-nixdorf/",
+  "title": "Creating a Flexible Design System to Deliver Cross-Solution Marketing Content | HatchWorks AI",
+  "description": "HatchWorks redesigned Diebold Nixdorf's ATM marketing application with a flexible, accessible design system, lifting usability scores from 31 to over 83.",
+  "bodyClass": "wp-singular page-template-default page page-id-27213 page-child parent-pageid-23823 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-27213 elementor-page-28202"
+ },
+ {
+  "route": "/case-studies/empowering-recruitment-marketing-ai-agents-smarter-hiring/",
+  "title": "Empowering Recruitment Marketing with AI Agents: Smarter Hiring at Scale | HatchWorks AI",
+  "description": "Recruitics added an AI agent to its programmatic job advertising platform, built with LangChain, RAG, and GCP, to automate postings and optimize recruitment budgets.",
+  "bodyClass": "wp-singular page-template-default page page-id-33192 page-child parent-pageid-23823 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-33192 elementor-page-28202"
+ },
+ {
+  "route": "/case-studies/from-50-ai-ideas-to-prioritized-outcome-driven-roadmap-modern-data-foundation/",
+  "title": "From 50+ AI Ideas to an Outcome-Driven Roadmap | HatchWorks AI",
+  "description": "A leading general contractor turned a sprawling list of AI possibilities into a focused, sequenced portfolio of priority workstreams, anchored on a modern data foundation built in Databricks.",
+  "bodyClass": "wp-singular page-template-default page page-id-35449 page-child parent-pageid-23823 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-35449 elementor-page-28202"
+ },
+ {
+  "route": "/case-studies/from-ad-hoc-ai-to-enterprise-operating-model/",
+  "title": "From Ad-Hoc AI to an Enterprise Operating Model | HatchWorks AI",
+  "description": "Vanco Payment Solutions engaged HatchWorks AI across two phases to transform how their engineering organization builds and ships software.",
+  "bodyClass": "wp-singular page-template-default page page-id-34965 page-child parent-pageid-23823 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-34965 elementor-page-28202"
+ },
+ {
+  "route": "/case-studies/helping-deliver-real-time-fleet-insights-with-retrieval-augmented-generation-rag/",
+  "title": "Helping Deliver Real-Time Fleet Insights with Retrieval Augmented Generation | HatchWorks AI",
+  "description": "Cox2M's Kayo AI Assistant lets fleet managers ask plain-language questions about trips, braking, and mileage and get real-time answers via HatchWorks' RAG Accelerator.",
+  "bodyClass": "wp-singular page-template-default page page-id-32221 page-child parent-pageid-23823 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-32221 elementor-page-28202"
+ },
+ {
+  "route": "/case-studies/ics/",
+  "title": "Validating a Successful User Experience to Support MVP Development | HatchWorks AI",
+  "description": "Integrated Care Solutions launched a post-acute care management MVP with HatchWorks, cutting cost of care 11%, length of stay 25%, and readmissions 10%.",
+  "bodyClass": "wp-singular page-template-default page page-id-29475 page-child parent-pageid-23823 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-29475 elementor-page-28202"
+ },
+ {
+  "route": "/case-studies/innovative-platform-next-generation-sales-enablement-financial-wellness/",
+  "title": "Building a Next-Gen Sales Enablement Platform for Financial Wellness | HatchWorks AI",
+  "description": "Capital Choice replaced pen-and-paper insurance quoting with MyCapitalChoice, a sales enablement platform built on AWS with real-time quoting and financial modeling.",
+  "bodyClass": "wp-singular page-template-default page page-id-33078 page-child parent-pageid-23823 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-33078 elementor-page-28202"
+ },
+ {
+  "route": "/case-studies/juice-plus/",
+  "title": "Understanding the Reporting Needs of an International Sales Team | HatchWorks AI",
+  "description": "Juice Plus+ partnered with HatchWorks on global user research to reimagine sales reporting for its independent partners, producing a clear product roadmap.",
+  "bodyClass": "wp-singular page-template-default page page-id-27735 page-child parent-pageid-23823 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-27735 elementor-page-28202"
+ },
+ {
+  "route": "/case-studies/proprietary-patient-system-faster-onboarding/",
+  "title": "A New Patient Management Solution for Specialty Pharmacy Programs | HatchWorks AI",
+  "description": "Clearway Health replaced an off-the-shelf tool with Charter, a cloud-native patient management system on AWS. New client onboarding is now 99% faster.",
+  "bodyClass": "wp-singular page-template-default page page-id-33053 page-child parent-pageid-23823 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-33053 elementor-page-28202"
+ },
+ {
+  "route": "/case-studies/scaling-ai-coaching-assistant-for-top-ceos/",
+  "title": "Scaling an AI Coaching Assistant for the World's Top CEOs | HatchWorks AI",
+  "description": "CEO Coaching International took Eve, its AI coaching assistant, from proof of concept to production. Eve now supports hundreds of executive coaching sessions a month.",
+  "bodyClass": "wp-singular page-template-default page page-id-33788 page-child parent-pageid-23823 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-33788 elementor-page-28202"
+ },
+ {
+  "route": "/case-studies/scaling-financial-health-with-a-shift-to-digital-sales-and-automation/",
+  "title": "Scaling Financial Health with a Shift to Digital Sales and Automation | HatchWorks AI",
+  "description": "WealthAbility automated tax and wealth projections with the Prospect Conversion Tool, cutting manual errors, refund requests, and onboarding time for its sales team.",
+  "bodyClass": "wp-singular page-template-default page page-id-33081 page-child parent-pageid-23823 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-33081 elementor-page-28202"
+ },
+ {
+  "route": "/case-studies/springhills/",
+  "title": "Defining and Designing a Population Health Platform from Scratch | HatchWorks AI",
+  "description": "Spring Hills moved its care team from spreadsheets to a custom population health platform. The 90-day readmission rate for its managed population is now under 10%.",
+  "bodyClass": "wp-singular page-template-default page page-id-26887 page-child parent-pageid-23823 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-26887 elementor-page-28202"
+ },
+ {
+  "route": "/communications/",
+  "title": "Communications and IoT Solutions | HatchWorks AI",
+  "description": "The future of communications is here with scalable, reliable, and secure solutions from Generative-Driven Development™.",
+  "bodyClass": "wp-singular page-template-default page page-id-31800 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-31800 elementor-page-28202"
+ },
+ {
+  "route": "/company/contact/",
+  "title": "Contact | HatchWorks AI",
+  "description": "Get in touch with HatchWorks! Find our contact information, locations of our USA and LaTAM offices, and connect with us on social media. Learn more about our approach, explore our blog, and discover career opportunities.",
+  "bodyClass": "wp-singular page-template page-template-elementor_header_footer page page-id-28232 page-child parent-pageid-15443 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-template-full-width elementor-kit-15997 elementor-page elementor-page-28232"
+ },
+ {
+  "route": "/cto-blueprint-rag/",
+  "title": "The CTO’s Blueprint to RAG | HatchWorks AI",
+  "description": "See how to implement Retrieval Augmented Generation (RAG) to enhance LLMs with your data, minimizing hallucinations and delivering accurate, real-time insights.",
+  "bodyClass": "wp-singular page-template-default page page-id-32440 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-32440 elementor-page-28202"
+ },
+ {
+  "route": "/data-modernization/",
+  "title": "Data Modernization | HatchWorks AI",
+  "description": "Modernize, connect, and govern your data so models, agents, analytics, and applications can work from trusted business context.",
+  "bodyClass": "wp-singular page-template-default page page-id-36801 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-36801 elementor-page-28202"
+ },
+ {
+  "route": "/data-science-machine-learning/",
+  "title": "Data Science & Machine Learning | HatchWorks AI",
+  "description": "Use proven machine learning and data science techniques to forecast what is coming, uncover patterns, optimize decisions, and automate work at scale.",
+  "bodyClass": "wp-singular page-template-default page page-id-32796 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-32796 elementor-page-28202"
+ },
+ {
+  "route": "/databricks/",
+  "title": "Databricks | HatchWorks AI",
+  "description": "Unlock the power of data with our unified platform that combines Lakehouse architecture and AI to eliminate silos and streamline collaboration.",
+  "bodyClass": "wp-singular page-template-default page page-id-32297 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-32297 elementor-page-28202"
+ },
+ {
+  "route": "/faq/",
+  "title": "Frequently Asked Questions | HatchWorks AI",
+  "description": "Search, filter, or tap any question. The universe of AI, demystified in plain language by the team at HatchWorks AI.",
+  "bodyClass": "wp-singular page-template page-template-elementor_header_footer page page-id-30507 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-template-full-width elementor-kit-15997 elementor-page elementor-page-30507"
+ },
+ {
+  "route": "/finance/",
+  "title": "Financial Services Software Solutions | HatchWorks AI",
+  "description": "Leverage GenDD to revolutionize your financial products with AI—from compliance automation to real-time fraud detection and intelligent customer engagement.",
+  "bodyClass": "wp-singular page-template-default page page-id-31643 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-31643 elementor-page-28202"
+ },
+ {
+  "route": "/forward-deployed-engineers/",
+  "title": "Forward Deployed Engineers | HatchWorks AI",
+  "description": "HatchWorks AI embeds senior AI builders inside your business to identify high-value opportunities, build production AI systems, and help your teams move",
+  "bodyClass": "wp-singular page-template-default page page-id-32356 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-32356 elementor-page-28202"
+ },
+ {
+  "route": "/gendd-ebook/",
+  "title": "GenDD | Generative-Driven Development™ | HatchWorks AI",
+  "description": "Built by HatchWorks AI, GenDD is the AI-native operating model for building software. It redesigns delivery around AI agents, human oversight, and measurable",
+  "bodyClass": "wp-singular page-template-default page page-id-33437 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-33437 elementor-page-28202"
+ },
+ {
+  "route": "/generative-driven-development/",
+  "title": "Generative-Driven Development™ | HatchWorks AI",
+  "description": "The AI-native operating model for building software by HatchWorks AI.",
+  "bodyClass": "wp-singular page-template-default page page-id-30343 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-30343 elementor-page-28202"
+ },
+ {
+  "route": "/google-cloud-build-the-intelligence-layer-your-business-runs-on/",
+  "title": "HatchWorks AI on Google Cloud | Build the Intelligence Layer Your Business Runs On | HatchWorks AI",
+  "description": "Model Garden",
+  "bodyClass": "wp-singular page-template-default page page-id-35309 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-35309 elementor-page-28202"
+ },
+ {
+  "route": "/hatchfutures/",
+  "title": "HatchFutures | HatchWorks AI",
+  "description": "HatchFutures is not a foundation. It is a belief. That the technology gap is closeable. That young people deserve access to the tools shaping the future. And",
+  "bodyClass": "wp-singular page-template-default page page-id-32190 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-32190 elementor-page-28202"
+ },
+ {
+  "route": "/healthcare/",
+  "title": "Healthcare Services Software Solutions | HatchWorks AI",
+  "description": "Elevate patient experiences with Generative-Driven Development™ for smarter, more efficient healthcare solutions.",
+  "bodyClass": "wp-singular page-template-default page page-id-31048 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-31048 elementor-page-28202"
+ },
+ {
+  "route": "/how-we-engage/",
+  "title": "How We Engage | HatchWorks AI",
+  "description": "Start with the model that fits the work today. Scale or combine them as the opportunity grows.",
+  "bodyClass": "wp-singular page-template-default page page-id-36543 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-36543 elementor-page-28202"
+ },
+ {
+  "route": "/intelligence-layer-ai/",
+  "title": "Enterprise AI Intelligence Layer Services | HatchWorks AI | HatchWorks AI",
+  "description": "Connect your company knowledge, data, systems, models, and agents so AI can reason with the right context, take action, and work across your business.",
+  "bodyClass": "wp-singular page-template-default page page-id-36593 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-36593 elementor-page-28202"
+ },
+ {
+  "route": "/model-fine-tuning-optimization/",
+  "title": "Model Fine-Tuning & AI Model Optimization | HatchWorks AI | HatchWorks AI",
+  "description": "The most powerful model is not always the right model.",
+  "bodyClass": "wp-singular page-template-default page page-id-36601 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-36601 elementor-page-28202"
+ },
+ {
+  "route": "/news/2025-inc-power-partner/",
+  "title": "HatchWorks AI Named 2025 Inc Power Partner for a Second Time",
+  "description": "HatchWorks AI is named a 2025 Inc Power Partner for a 2nd time, recognized for turning enterprise AI into measurable ROI for clients.",
+  "bodyClass": "wp-singular post-template-default single single-post postid-34264 single-format-standard wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-34264 elementor-page-27514"
+ },
+ {
+  "route": "/news/code-generative-ai-solution-of-the-year/",
+  "title": "HatchWorks AI Named \"Code Generative AI Solution of the Year\" in the 2026 AI Breakthrough Awards",
+  "description": "HatchWorks AI has been named Code Generative AI Solution of the Year in the 2026 AI Breakthrough Awards for Generative-Driven Development.",
+  "bodyClass": "wp-singular post-template-default single single-post postid-36129 single-format-standard wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-36129 elementor-page-27514"
+ },
+ {
+  "route": "/news/global-generative-ai-awards/",
+  "title": "HatchWorks AI Wins at Global Generative AI Awards 2024 | HatchWorks AI",
+  "description": "Looking to accelerate software development? HatchWorks AI's award-winning Generative-Driven Development™ uses Generative AI to boost productivity and deliver high-quality solutions.",
+  "bodyClass": "wp-singular post-template-default single single-post postid-32181 single-format-standard wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-32181 elementor-page-27514"
+ },
+ {
+  "route": "/newsletter/",
+  "title": "Talking AI Newsletter | HatchWorks AI",
+  "description": "Subscribe to the HatchWorks Newsletter for expert insights on AI, software development, tech trends, and innovation strategies—delivered straight to your inbox.",
+  "bodyClass": "wp-singular page-template-default page page-id-32246 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-32246 elementor-page-28202"
+ },
+ {
+  "route": "/privacy-policy/",
+  "title": "Privacy Policy | HatchWorks AI",
+  "description": "This privacy notice describes how and why we might collect, store, use, and/or share your information when you visit our website.",
+  "bodyClass": "privacy-policy wp-singular page-template-default page page-id-24112 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-24112 elementor-page-28202"
+ },
+ {
+  "route": "/private-equity/",
+  "title": "Private Equity AI Solutions | HatchWorks AI",
+  "description": "We embed AI inside your portfolio companies to cut cost, modernize how they operate, and build proprietary IP they own. Production systems, grounded in their",
+  "bodyClass": "wp-singular page-template-default page page-id-35351 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-35351 elementor-page-28202"
+ },
+ {
+  "route": "/put-openai-to-work-in-your-business/",
+  "title": "Put OpenAI to work in your business. | HatchWorks AI",
+  "description": "We embed Forward Deployed Engineers inside your team to find where OpenAI models deliver value, ship them into production, and train your organization to make",
+  "bodyClass": "wp-singular page-template-default page page-id-36464 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-36464 elementor-page-28202"
+ },
+ {
+  "route": "/real-estate/",
+  "title": "Real Estate | HatchWorks AI",
+  "description": "Increase NOI, shorten vacancy cycles, and run tighter operations with AI-driven software built around your data.",
+  "bodyClass": "wp-singular page-template-default page page-id-35244 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-35244 elementor-page-28202"
+ },
+ {
+  "route": "/recruitment-fraud-disclaimer/",
+  "title": "Recruitment Fraud Disclaimer | HatchWorks AI",
+  "description": "🚨",
+  "bodyClass": "wp-singular page-template-default page page-id-30892 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-30892 elementor-page-28202"
+ },
+ {
+  "route": "/resources/blog/",
+  "title": "Hatchworks Blog - Product, Design, Agile, Software, Nearshore",
+  "description": "Stay up-to-date on all things HatchWorks-related with the HatchWorks Blog. Subscribe today.",
+  "bodyClass": "wp-singular page-template-default page page-id-28438 page-child parent-pageid-28440 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-28438 elementor-page-28202"
+ },
+ {
+  "route": "/resources/events/",
+  "title": "Events | HatchWorks AI",
+  "description": "Explore HatchWorks' events page for upcoming AI and technology sessions, plus recordings of past events to enhance your business's tech strategy.",
+  "bodyClass": "wp-singular page-template-default page page-id-15449 page-child parent-pageid-28440 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-15449 elementor-page-28202"
+ },
+ {
+  "route": "/resources/newsroom/",
+  "title": "Newsroom | HatchWorks AI",
+  "description": "Stay up-to-date on all the latest podcast appearances from the HatchWorks team.​",
+  "bodyClass": "wp-singular page-template-default page page-id-28442 page-child parent-pageid-15443 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-28442 elementor-page-28202"
+ },
+ {
+  "route": "/retail/",
+  "title": "Retail | HatchWorks AI",
+  "description": "Enhance your retail operations with HatchWorks' AI-driven solutions. Boost efficiency, personalize shopping experiences, and drive growth in the fast-paced retail market.",
+  "bodyClass": "wp-singular page-template-default page page-id-31959 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-31959 elementor-page-28202"
+ },
+ {
+  "route": "/state-of-ai-2026-mid-year-reality-check/",
+  "title": "State of AI 2026 - Mid-Year Reality Check | HatchWorks AI",
+  "description": "30+ pages of mid-year analysis. Instant PDF download — straight to your inbox.",
+  "bodyClass": "wp-singular page-template-default page page-id-36050 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-36050 elementor-page-28202"
+ },
+ {
+  "route": "/talking-ai/",
+  "title": "Talking AI | Conversations with AI experts and early adopters | HatchWorks AI",
+  "description": "Discover how AI transforms business with HatchWorks' 'Talking AI'—insightful discussions on the latest in artificial intelligence.",
+  "bodyClass": "wp-singular page-template-default page page-id-29242 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-29242 elementor-page-28202"
+ },
+ {
+  "route": "/technology/",
+  "title": "Technology | HatchWorks AI",
+  "description": "Enhance your retail operations with HatchWorks' AI-driven solutions. Boost efficiency, personalize shopping experiences, and drive growth in the fast-paced retail market.",
+  "bodyClass": "wp-singular page-template-default page page-id-32037 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-32037 elementor-page-28202"
+ },
+ {
+  "route": "/terms-and-conditions/",
+  "title": "Terms and Conditions | HatchWorks AI",
+  "description": "Review the Terms and Conditions for HatchWorks Technologies, outlining the legal agreements, user responsibilities, intellectual property rights, and user-generated contributions for accessing and using the site. These terms are crucial for understanding the permissible uses and restrictions when interacting with HatchWorks' services and content.",
+  "bodyClass": "wp-singular page-template-default page page-id-25863 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-25863 elementor-page-28202"
+ },
+ {
+  "route": "/the-gendd-manifesto/",
+  "title": "The GenDD Manifesto | HatchWorks AI",
+  "description": "AI has made software easy to build. It did not make software easy to build well. Most teams end up saving time and money at the cost of quality and security.",
+  "bodyClass": "wp-singular page-template page-template-elementor_header_footer page page-id-36234 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-template-full-width elementor-kit-15997 elementor-page elementor-page-36234"
+ }
+]

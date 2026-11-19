@@ -1,0 +1,351 @@
+/* =====================================================================================
+   FUNK — visual identity layer
+   Loaded after every mirrored stylesheet. It only changes colour, type, backgrounds,
+   decoration and motion; markup, content and layout are untouched. Colour literals in
+   the mirrored CSS are remapped at build time (scripts/funk-recolor.mjs); this file adds
+   gradients, shapes and interaction states on top. Behaviour lives in /assets/js/funk.js.
+   ===================================================================================== */
+
+:root {
+  --fx-ink: #0d0720;
+  --fx-ink-2: #160e27;
+  --fx-blue: #4d6bff;
+  --fx-electric: #2f7bff;
+  --fx-violet: #8b3dff;
+  --fx-purple: #6a1fd1;
+  --fx-pink: #ff3d9a;
+  --fx-coral: #ff6b6b;
+  --fx-orange: #ff8a3d;
+  --fx-lilac: #e9c8ff;
+  --fx-grad: linear-gradient(115deg, #3f7bff 0%, #8b3dff 28%, #ff3d9a 56%, #ff6b6b 76%, #ff8a3d 100%);
+  --fx-grad-loop: linear-gradient(115deg, #3f7bff, #8b3dff, #ff3d9a, #ff8a3d, #ff3d9a, #8b3dff, #3f7bff);
+  --fx-grad-text: linear-gradient(100deg, #7fa0ff 0%, #b98bff 30%, #ff7cc0 60%, #ffa36b 85%, #7fa0ff 100%);
+  --fx-ease: cubic-bezier(.2, .8, .2, 1);
+  --fx-spring: cubic-bezier(.34, 1.56, .64, 1);
+  /* header variables used by the mirrored header */
+  --hw-ground: rgba(16, 9, 34, .72);
+  --hw-cta: var(--fx-grad);
+  --hw-hair: rgba(185, 139, 255, .16);
+  /* Elementor global colours */
+  --e-global-color-primary: #5c74ff;
+  --e-global-color-secondary: #6a1fd1;
+  --e-global-color-accent: #ff6b3d;
+  --e-global-color-8381b09: #ff6b3d;
+  --e-global-color-254d26e: #ffb13d;
+}
+
+html { scrollbar-color: #8b3dff #0d0720; }
+
+::selection { background: #ff3d9a; color: #fff; }
+
+/* ---------- typography ---------- */
+h1, h2, h3,
+.elementor-heading-title,
+.elementor-widget-heading .elementor-heading-title {
+  font-family: 'Space Grotesk', 'Open Sans', sans-serif !important;
+  letter-spacing: -.035em;
+  font-kerning: normal;
+  text-wrap: balance;
+}
+h1, h2, h1.elementor-heading-title, h2.elementor-heading-title { font-weight: 700 !important; }
+h1, h2, h3 { overflow-wrap: break-word; }
+
+/* animated gradient text (accent words in headings, eyebrows, numbers) */
+.fx-grad-text,
+.fx-grad-text * {
+  background-image: var(--fx-grad-text) !important;
+  background-size: 250% 100% !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  animation: fxTextFlow 7s linear infinite;
+}
+.fx-grad-text { display: inline; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+@keyframes fxTextFlow { to { background-position: -250% 0; } }
+
+.fx-eyebrow {
+  background-image: var(--fx-grad-text) !important;
+  background-size: 250% 100% !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  animation: fxTextFlow 9s linear infinite;
+}
+
+/* ---------- header ---------- */
+.hw-bar {
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  backdrop-filter: blur(18px) saturate(160%);
+}
+.hw-bar::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: -1px; height: 1px; pointer-events: none;
+  background: var(--fx-grad-loop); background-size: 300% 100%; opacity: .75;
+  animation: fxSlide 10s linear infinite;
+}
+@keyframes fxSlide { to { background-position: -300% 0; } }
+.hw-btn--cta {
+  background: var(--fx-grad-loop) !important; background-size: 300% 100% !important;
+  animation: fxSlide 8s linear infinite;
+  box-shadow: 0 6px 24px -6px rgba(255, 61, 154, .55), inset 0 1px 0 rgba(255, 255, 255, .25);
+  border-radius: 999px !important;
+}
+.hw-btn--ghost { border-radius: 999px !important; }
+.hw-btn--ghost:hover { border-color: rgba(185, 139, 255, .6) !important; box-shadow: 0 0 0 3px rgba(139, 61, 255, .18); }
+
+/* scroll progress */
+.fx-progress {
+  position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 100000; pointer-events: none;
+  transform-origin: 0 50%; transform: scaleX(var(--fx-p, 0));
+  background: var(--fx-grad);
+  box-shadow: 0 0 12px rgba(255, 61, 154, .7);
+}
+
+/* ---------- buttons ---------- */
+.elementor-button, .hs-button, input[type="submit"], button[type="submit"], .hw404 a.hw404-btn {
+  transition: transform .35s var(--fx-spring), box-shadow .35s var(--fx-ease), background-color .25s ease, color .25s ease, border-color .25s ease, filter .25s ease !important;
+}
+.fx-btn-fill {
+  background-image: var(--fx-grad-loop) !important;
+  background-size: 300% 100% !important;
+  background-color: transparent !important;
+  color: #fff !important;
+  border-color: transparent !important;
+  animation: fxSlide 8s linear infinite;
+  box-shadow: 0 10px 30px -10px rgba(139, 61, 255, .8), 0 4px 18px -6px rgba(255, 61, 154, .5), inset 0 1px 0 rgba(255, 255, 255, .28) !important;
+}
+.fx-btn-fill * { color: #fff !important; fill: currentColor; }
+.fx-btn-fill:hover, .fx-btn-fill:focus-visible {
+  filter: saturate(1.25) brightness(1.08);
+  box-shadow: 0 16px 44px -10px rgba(139, 61, 255, .95), 0 8px 26px -6px rgba(255, 107, 107, .65), inset 0 1px 0 rgba(255, 255, 255, .35) !important;
+}
+.fx-btn-line { position: relative; }
+.fx-btn-line:hover, .fx-btn-line:focus-visible {
+  border-color: rgba(255, 61, 154, .8) !important;
+  box-shadow: 0 0 0 3px rgba(139, 61, 255, .22), 0 10px 30px -12px rgba(255, 61, 154, .6) !important;
+}
+.fx-magnetic { will-change: auto; }
+.fx-magnetic.fx-mag-on { transition: transform .15s linear, box-shadow .35s var(--fx-ease), filter .25s ease !important; }
+:focus-visible { outline-color: #ff3d9a; }
+
+/* ---------- cards ---------- */
+.fx-card {
+  --mx: 50%; --my: 50%;
+  transition: transform .5s var(--fx-ease), box-shadow .5s var(--fx-ease), border-color .4s ease !important;
+  transform-style: preserve-3d;
+}
+.fx-card::after {
+  content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; z-index: 0;
+  padding: 1px;
+  background: radial-gradient(420px circle at var(--mx) var(--my), rgba(255, 61, 154, .9), rgba(139, 61, 255, .6) 35%, rgba(77, 107, 255, .25) 60%, transparent 75%);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+  opacity: 0; transition: opacity .4s ease;
+}
+.fx-card.fx-spotlit {
+  background-image: radial-gradient(380px circle at var(--mx) var(--my), rgba(139, 61, 255, var(--fx-spot, 0)), rgba(255, 61, 154, calc(var(--fx-spot, 0) * .45)) 40%, transparent 70%) !important;
+}
+.fx-card.fx-spotlit.fx-hot { --fx-spot: .18; }
+.fx-light-card.fx-spotlit.fx-hot { --fx-spot: .08; }
+.fx-card.fx-hot { box-shadow: 0 30px 60px -30px rgba(139, 61, 255, .65), 0 18px 40px -24px rgba(255, 61, 154, .45) !important; }
+.fx-card.fx-hot::after { opacity: 1; }
+
+/* ---------- section decoration: blobs + floating 3D shapes ---------- */
+fx-el { display: block; }
+.fx-host { isolation: isolate; }
+.fx-host-pos { position: relative; }
+.fx-deco {
+  position: absolute; inset: 0; z-index: -1; overflow: hidden; pointer-events: none;
+  contain: strict;
+}
+.fx-blob {
+  position: absolute; width: var(--s, 520px); height: var(--s, 520px); border-radius: 50%;
+  background: radial-gradient(circle at 50% 50%, var(--c1) 0%, transparent 68%);
+  opacity: var(--o, .5); mix-blend-mode: screen;
+  animation: fxDrift var(--d, 22s) ease-in-out infinite alternate;
+  transform: translate3d(0, 0, 0);
+}
+@keyframes fxDrift {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(var(--dx, 60px), var(--dy, -40px), 0) scale(1.15); }
+  100% { transform: translate3d(calc(var(--dx, 60px) * -0.6), calc(var(--dy, -40px) * -1), 0) scale(.92); }
+}
+.fx-light .fx-blob { mix-blend-mode: multiply; --o: .22; }
+
+.fx-shape {
+  position: absolute; pointer-events: none;
+  transform: translate3d(var(--px, 0px), calc(var(--py, 0px) + var(--sy, 0px)), 0);
+  transition: transform .9s var(--fx-ease);
+  perspective: 700px;
+}
+.fx-shape > fx-el { position: absolute; inset: 0; display: block; animation: fxFloat var(--d, 9s) ease-in-out infinite alternate; }
+@keyframes fxFloat {
+  from { transform: translateY(-14px) rotate(-6deg); }
+  to { transform: translateY(16px) rotate(8deg); }
+}
+
+/* glossy sphere */
+.fx-orb > fx-el {
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 32% 28%, rgba(255, 255, 255, .95) 0 4%, rgba(255, 255, 255, .35) 10%, transparent 26%),
+    radial-gradient(circle at 70% 78%, rgba(255, 138, 61, .9), transparent 50%),
+    radial-gradient(circle at 40% 40%, #ff3d9a 0%, #8b3dff 55%, #2a0f6b 100%);
+  box-shadow: 0 30px 60px -20px rgba(139, 61, 255, .7), inset -12px -16px 30px rgba(20, 0, 60, .55);
+}
+/* 3D ring / torus */
+.fx-ring { transform-style: preserve-3d; }
+.fx-ring > fx-el {
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, #3f7bff, #8b3dff, #ff3d9a, #ff8a3d, #3f7bff);
+  -webkit-mask: radial-gradient(circle, transparent 55%, #000 56.5%, #000 69%, transparent 70.5%);
+  mask: radial-gradient(circle, transparent 55%, #000 56.5%, #000 69%, transparent 70.5%);
+  animation: fxSpin3d var(--d, 14s) linear infinite;
+  filter: drop-shadow(0 18px 30px rgba(139, 61, 255, .55));
+}
+@keyframes fxSpin3d {
+  from { transform: rotateX(64deg) rotateY(0deg) rotateZ(0deg); }
+  to { transform: rotateX(64deg) rotateY(18deg) rotateZ(360deg); }
+}
+/* wireframe cube */
+.fx-cube { transform-style: preserve-3d; }
+.fx-cube > fx-el { transform-style: preserve-3d; animation: fxCube var(--d, 18s) linear infinite; }
+.fx-cube > fx-el > fx-el {
+  position: absolute; inset: 0; border: 1.5px solid rgba(185, 139, 255, .8);
+  background: linear-gradient(135deg, rgba(77, 107, 255, .16), rgba(255, 61, 154, .1));
+  box-shadow: inset 0 0 22px rgba(139, 61, 255, .35);
+}
+.fx-cube > fx-el > fx-el:nth-child(1) { transform: translateZ(calc(var(--w) / 2)); }
+.fx-cube > fx-el > fx-el:nth-child(2) { transform: rotateY(180deg) translateZ(calc(var(--w) / 2)); }
+.fx-cube > fx-el > fx-el:nth-child(3) { transform: rotateY(90deg) translateZ(calc(var(--w) / 2)); }
+.fx-cube > fx-el > fx-el:nth-child(4) { transform: rotateY(-90deg) translateZ(calc(var(--w) / 2)); }
+.fx-cube > fx-el > fx-el:nth-child(5) { transform: rotateX(90deg) translateZ(calc(var(--w) / 2)); }
+.fx-cube > fx-el > fx-el:nth-child(6) { transform: rotateX(-90deg) translateZ(calc(var(--w) / 2)); }
+@keyframes fxCube { from { transform: rotateX(-24deg) rotateY(0deg); } to { transform: rotateX(-24deg) rotateY(360deg); } }
+/* pill / capsule */
+.fx-pill > fx-el {
+  border-radius: 999px;
+  background: linear-gradient(160deg, #ffb07a 0%, #ff6b6b 40%, #ff3d9a 100%);
+  box-shadow: 0 24px 44px -18px rgba(255, 61, 154, .7), inset 0 6px 10px rgba(255, 255, 255, .45), inset 0 -10px 16px rgba(120, 0, 60, .35);
+}
+/* squiggle */
+.fx-squig > fx-el {
+  background: none;
+  animation-duration: var(--d, 11s);
+}
+.fx-squig svg { width: 100%; height: 100%; overflow: visible; filter: drop-shadow(0 8px 16px rgba(255, 61, 154, .45)); }
+/* dotted grid */
+.fx-dots > fx-el {
+  background-image: radial-gradient(rgba(185, 139, 255, .55) 1.6px, transparent 1.8px);
+  background-size: 18px 18px;
+  -webkit-mask: radial-gradient(circle, #000 30%, transparent 70%);
+  mask: radial-gradient(circle, #000 30%, transparent 70%);
+  animation: none;
+}
+/* plus / sparkle */
+.fx-spark > fx-el {
+  background: var(--fx-grad);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M20 0c1.5 11 7 17.5 20 20-13 2.5-18.5 9-20 20C18.5 29 13 22.5 0 20 13 17.5 18.5 11 20 0z'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M20 0c1.5 11 7 17.5 20 20-13 2.5-18.5 9-20 20C18.5 29 13 22.5 0 20 13 17.5 18.5 11 20 0z'/%3E%3C/svg%3E") center / contain no-repeat;
+  animation: fxTwinkle var(--d, 5s) ease-in-out infinite alternate;
+}
+@keyframes fxTwinkle { from { transform: scale(.7) rotate(0deg); opacity: .55; } to { transform: scale(1.1) rotate(90deg); opacity: 1; } }
+
+/* ---------- scroll reveals ---------- */
+.fx-reveal {
+  opacity: 0;
+  transform: translate3d(0, 46px, 0) scale(.97);
+  transition: opacity .9s var(--fx-ease), transform 1.1s var(--fx-ease);
+  transition-delay: var(--fx-delay, 0ms);
+}
+.fx-reveal.fx-in { opacity: 1; transform: none; }
+.fx-reveal-l { transform: translate3d(-56px, 0, 0) rotate(-1.5deg); }
+.fx-reveal-r { transform: translate3d(56px, 0, 0) rotate(1.5deg); }
+.fx-reveal-l.fx-in, .fx-reveal-r.fx-in { transform: none; }
+
+/* section divider glow line */
+.fx-seam { position: relative; }
+.fx-seam::before {
+  content: ''; position: absolute; left: 8%; right: 8%; top: 0; height: 1px; z-index: 2; pointer-events: none;
+  background: linear-gradient(90deg, transparent, rgba(77, 107, 255, .7), rgba(255, 61, 154, .8), rgba(255, 138, 61, .6), transparent);
+}
+
+/* ---------- links, forms, misc accents ---------- */
+.elementor-widget-text-editor a:not(.elementor-button),
+.elementor-widget-theme-post-content a:not(.elementor-button) {
+  background-image: var(--fx-grad); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%;
+  transition: background-size .35s var(--fx-ease), color .2s ease;
+}
+.elementor-widget-text-editor a:not(.elementor-button):hover,
+.elementor-widget-theme-post-content a:not(.elementor-button):hover { background-size: 100% 2px; }
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):focus,
+textarea:focus, select:focus {
+  border-color: #b98bff !important;
+  box-shadow: 0 0 0 3px rgba(139, 61, 255, .28), 0 0 24px -6px rgba(255, 61, 154, .5) !important;
+  outline: none;
+}
+
+.elementor-icon, .elementor-icon-box-icon .elementor-icon { transition: transform .5s var(--fx-spring), filter .3s ease; }
+.fx-card:hover .elementor-icon { transform: translateZ(30px) rotate(-8deg) scale(1.12); filter: drop-shadow(0 6px 14px rgba(255, 61, 154, .55)); }
+
+img { transition: filter .4s ease; }
+.fx-card:hover img:not([src$=".svg"]) { filter: saturate(1.15); }
+
+/* footer: gradient horizon */
+footer.elementor-location-footer, [data-elementor-type="footer"] { position: relative; }
+[data-elementor-type="footer"]::before {
+  content: ''; position: absolute; left: 0; right: 0; top: 0; height: 2px; z-index: 3; pointer-events: none;
+  background: var(--fx-grad-loop); background-size: 300% 100%;
+  animation: fxSlide 12s linear infinite;
+}
+
+/* 404 page (shipped by this replica) */
+.hw404 {
+  background:
+    radial-gradient(55% 55% at 80% 15%, rgba(139, 61, 255, .55), transparent 70%),
+    radial-gradient(45% 45% at 10% 85%, rgba(255, 61, 154, .35), transparent 70%),
+    radial-gradient(40% 40% at 60% 100%, rgba(255, 138, 61, .25), transparent 70%),
+    #0d0720 !important;
+}
+.hw404 .hw404-title { font-size: clamp(44px, 8vw, 96px); }
+.hw404 a.hw404-btn { border-radius: 999px; }
+
+/* ---------- small screens: fewer, smaller shapes ---------- */
+@media (max-width: 767px) {
+  .fx-shape { scale: .6; }
+  .fx-shape.fx-desk { display: none; }
+  .fx-blob { --s: 340px !important; }
+  .fx-blob { opacity: calc(var(--o, .5) * .8); }
+  .fx-reveal-l, .fx-reveal-r { transform: translate3d(0, 40px, 0); }
+}
+
+/* ---------- reduced motion: keep the colours, drop the movement ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .fx-grad-text, .fx-grad-text *, .fx-eyebrow, .fx-blob, .fx-shape > fx-el, .fx-ring > fx-el, .fx-cube > fx-el,
+  .hw-bar::after, .hw-btn--cta, .fx-btn-fill, [data-elementor-type="footer"]::before { animation: none !important; }
+  .fx-reveal, .fx-reveal-l, .fx-reveal-r { opacity: 1; transform: none; transition: none; }
+  .fx-shape { transition: none; }
+  .fx-card, .fx-magnetic { transform: none !important; }
+}
+
+/* ---------- late overrides ---------- */
+.fx-card.fx-reveal {
+  transition: opacity .9s var(--fx-ease) var(--fx-delay, 0ms), transform 1.1s var(--fx-ease) var(--fx-delay, 0ms) !important;
+}
+#hwnav .hw-btn.hw-btn--cta, #hwnav .hw-btn.hw-btn--cta:hover, #hwnav .hw-btn.hw-btn--cta:focus,
+html body .hw-btn.hw-btn--cta {
+  animation: fxSlide 8s linear infinite;
+  box-shadow: 0 6px 24px -6px rgba(255, 61, 154, .55), inset 0 1px 0 rgba(255, 255, 255, .25);
+  background: var(--fx-grad-loop) !important; background-size: 300% 100% !important;
+  border-radius: 999px !important;
+}
+
+/* decorative background videos take on the new palette (content videos are left as they are) */
+video[aria-hidden="true"], video[role="presentation"], video.elementor-background-video-hosted, video[class*="hero-vid"], video[data-hero-video] {
+  filter: hue-rotate(75deg) saturate(1.35) contrast(1.05);
+}
+
+/* shapes stay quieter on light sections so they never compete with dark body copy */
+.fx-light .fx-shape { opacity: .55; }
+.fx-light .fx-blob { mix-blend-mode: multiply; }

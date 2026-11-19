@@ -1,0 +1,1370 @@
+<!--page {"route": "/ai-strategy-roadmap/", "title": "AI Strategy & Roadmap Services (GenROI) | HatchWorks AI", "description": "Turn AI ideas into an actionable roadmap with GenROI—our AI-powered, strategist-led approach to identifying and prioritizing AI opportunities.", "bodyClass": "wp-singular page-template-default page page-id-32526 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor jlt-admin-bar exad-hf-template-hello-elementor exad-hf-stylesheet-hello-elementor mega-menu-menu-1 hello-elementor-default exclusive-addons-elementor elementor-default elementor-kit-15997 elementor-page elementor-page-32526 elementor-page-28202"} -->
+<!--head-->
+<link rel="stylesheet" href="/wp-content/uploads/elementor/css/post-32526.css" media="all">
+<link rel="stylesheet" href="/wp-content/uploads/elementor/css/post-28202.css" media="all">
+<!--/head-->
+<div data-elementor-type="single-page" data-elementor-id="28202" class="elementor elementor-28202 elementor-location-single post-32526 page type-page status-publish has-post-thumbnail hentry" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-17fa7f5 e-con-full e-flex e-con e-parent" data-id="17fa7f5" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-05300a0 e-con-full e-flex e-con e-child" data-id="05300a0" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-eb794bf elementor-widget elementor-widget-theme-post-content" data-id="eb794bf" data-element_type="widget" data-e-type="widget" data-widget_type="theme-post-content.default">
+							<div data-elementor-type="wp-page" data-elementor-id="32526" class="elementor elementor-32526" data-elementor-post-type="page">
+				<div class="elementor-element elementor-element-d7118c6 e-con-full e-flex e-con e-parent" data-id="d7118c6" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-2e50348 elementor-widget__width-inherit elementor-widget elementor-widget-html" data-id="2e50348" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+					
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;800&amp;family=Open+Sans:wght@300;400;600;700&amp;display=swap"/>
+
+<div id="genroi-page">
+<style>
+#genroi-page,#genroi-page .grp-sec{box-sizing:border-box}
+#genroi-page{display:block;position:relative;width:100%;max-width:100%;overflow-x:clip}
+#genroi-page .grp-sec{display:block;position:relative;width:100%;max-width:100%;padding:clamp(56px,7vw,110px) clamp(20px,5vw,64px)}
+#genroi-page .grp-flush{padding:0}
+#genroi-page .grp-sec[id]{scroll-margin-top:90px}
+#genroi-page img,#genroi-page svg,#genroi-page canvas{max-width:100%}
+#genroi-page img{height:auto}
+/* One focus treatment for the whole block (design system: 2px teal ring, 2px offset) */
+#genroi-page a:focus-visible,#genroi-page button:focus-visible{outline:2px solid #3abdbc;outline-offset:2px;border-radius:6px}
+</style>
+
+
+
+<div class="grp-sec grp-flush">
+
+<div id="genroi-bg" aria-hidden="true"></div>
+
+<style>
+/* Base tone sits on <html> so it always covers, whatever the page height.
+   The two glows live on a position:fixed layer instead of a fixed background
+   attachment — same viewport anchoring, but it also works on iOS Safari,
+   where background-attachment:fixed is ignored. */
+html{
+  --gr-base:#151920;
+  --gr-tx:12%;  --gr-ty:-6%;  --gr-ta:.075;
+  --gr-bx:92%;  --gr-by:108%; --gr-ba:.05;
+  background-color:var(--gr-base) !important;
+}
+body{background-color:transparent !important}
+
+#genroi-bg{
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  contain:layout paint style;
+  transform:translateZ(0);
+  background-image:
+    radial-gradient(1100px 780px at var(--gr-tx) var(--gr-ty),rgba(58,189,188,var(--gr-ta)),transparent 62%),
+    radial-gradient(940px 660px at var(--gr-bx) var(--gr-by),rgba(16,117,139,var(--gr-ba)),transparent 66%);
+  background-repeat:no-repeat,no-repeat;
+}
+</style>
+
+<script>
+(function(){
+  var html=document.documentElement;
+  if(html.dataset.grBg) return;
+  html.dataset.grBg='1';
+
+  var layer=document.getElementById('genroi-bg');
+  if(layer && layer.parentNode!==document.body) document.body.appendChild(layer);
+
+  /* Four brand-safe stops: Neural Black → deep blue-black → back.
+     Teal + Link Blue glows only, no multicolour. */
+  var K=[
+    {base:[21,25,32], t:[12,-6,.075], b:[92,108,.05 ]},
+    {base:[18,23,31], t:[78, 18,.06 ], b:[ 8, 82,.07 ]},
+    {base:[15,21,28], t:[22, 86,.05 ], b:[88, 12,.085]},
+    {base:[20,26,34], t:[50,104,.085], b:[50, -8,.05 ]}
+  ];
+
+  function lerp(a,b,t){return a+(b-a)*t}
+  var appliedAt=-1;
+  function apply(p){
+    lastApply=performance.now();
+    /* Quantize: repainting two viewport-sized radial gradients is the most
+       expensive thing on the page, so skip sub-perceptual steps. */
+    var q=Math.round(p*400);
+    if(q===appliedAt) return;
+    appliedAt=q;
+    var seg=Math.min(K.length-2,Math.floor(p*(K.length-1)));
+    var t=p*(K.length-1)-seg;
+    var A=K[seg],B=K[seg+1];
+    var r=Math.round(lerp(A.base[0],B.base[0],t)),
+        g=Math.round(lerp(A.base[1],B.base[1],t)),
+        bl=Math.round(lerp(A.base[2],B.base[2],t));
+    html.style.setProperty('--gr-base','rgb('+r+','+g+','+bl+')');
+    html.style.setProperty('--gr-tx',lerp(A.t[0],B.t[0],t).toFixed(1)+'%');
+    html.style.setProperty('--gr-ty',lerp(A.t[1],B.t[1],t).toFixed(1)+'%');
+    html.style.setProperty('--gr-ta',lerp(A.t[2],B.t[2],t).toFixed(4));
+    html.style.setProperty('--gr-bx',lerp(A.b[0],B.b[0],t).toFixed(1)+'%');
+    html.style.setProperty('--gr-by',lerp(A.b[1],B.b[1],t).toFixed(1)+'%');
+    html.style.setProperty('--gr-ba',lerp(A.b[2],B.b[2],t).toFixed(4));
+  }
+
+  var target=0,current=0,rafId=0,lastApply=0;
+  var RM=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function progress(){
+    var max=(document.documentElement.scrollHeight||1)-window.innerHeight;
+    if(max<=0) return 0;
+    var p=(window.pageYOffset||document.documentElement.scrollTop)/max;
+    return p<0?0:p>1?1:p;
+  }
+
+  function settle(){
+    rafId=0;
+    current+=(target-current)*.12;
+    apply(current);
+    if(Math.abs(target-current)>.0008){rafId=requestAnimationFrame(settle)}
+    else{current=target;apply(current)}
+  }
+
+  function onScroll(){
+    target=progress();
+    if(RM||performance.now()-lastApply>250){
+      current=target;apply(current);
+      if(rafId){cancelAnimationFrame(rafId);rafId=0}
+      return;
+    }
+    if(!rafId) rafId=requestAnimationFrame(settle);
+  }
+
+  current=target=progress();
+  apply(current);
+  window.addEventListener('scroll',onScroll,{passive:true});
+  window.addEventListener('resize',onScroll,{passive:true});
+})();
+</script>
+</div>
+
+
+<div class="grp-sec grp-flush">
+<div id="genroi-hero">
+<style>
+#genroi-hero{all:initial;display:block;position:relative;background:transparent;overflow:hidden;font-family:'Open Sans',system-ui,sans-serif}
+#genroi-hero *{box-sizing:border-box;margin:0;padding:0}
+
+/* Soft glows drawn as gradients rather than blurred layers — same look, no
+   120px blur pass on every paint (mobile paint cost was the bottleneck). */
+#genroi-hero .bg-glow{position:absolute;border-radius:50%;pointer-events:none;z-index:1;will-change:auto}
+#genroi-hero .bg-glow-1{width:760px;height:760px;top:-34%;left:2%;background:radial-gradient(circle closest-side,rgba(58,189,188,.07),rgba(58,189,188,.03) 45%,transparent 72%)}
+#genroi-hero .bg-glow-2{width:620px;height:620px;bottom:-38%;right:-2%;background:radial-gradient(circle closest-side,rgba(16,117,139,.055),rgba(16,117,139,.02) 48%,transparent 74%)}
+#genroi-hero canvas{position:absolute;inset:0;z-index:2}
+
+#genroi-hero .content{position:relative;z-index:10;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:clamp(3rem,8vw,5.5rem) clamp(1.25rem,5vw,3rem) clamp(2rem,5vw,3.5rem);text-align:center;gap:clamp(1.2rem,2.4vw,2rem);max-width:920px;margin:0 auto}
+
+#genroi-hero .logo-wrap{width:clamp(220px,42vw,440px);flex-shrink:0}
+#genroi-hero .logo-wrap .main-logo{width:100%;height:auto;display:block}
+
+#genroi-hero h1{font-family:'Space Grotesk','Open Sans',sans-serif;font-size:clamp(1.5rem,4.1vw,3.05rem);font-weight:800;color:#ffffff;line-height:1.12;letter-spacing:-.03em;max-width:820px;text-wrap:balance}
+#genroi-hero h1 .accent{color:#3abdbc}
+
+#genroi-hero .eyebrow{font-size:clamp(.66rem,.9vw,.78rem);font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#3abdbc;display:inline-flex;align-items:center;gap:.55rem}
+#genroi-hero .eyebrow::before{content:'';width:6px;height:6px;border-radius:50%;background:currentColor;flex:none;animation:grhPulse 2.4s ease-in-out infinite}
+@keyframes grhPulse{0%,100%{opacity:1}50%{opacity:.35}}
+
+#genroi-hero .sub{font-size:clamp(.9rem,1.25vw,1.1rem);font-weight:400;color:rgba(255,255,255,.62);max-width:680px;line-height:1.55;text-wrap:pretty}
+
+#genroi-hero .cta-row{display:flex;align-items:center;gap:clamp(.6rem,1.2vw,1rem);flex-wrap:wrap;justify-content:center}
+#genroi-hero .cta-primary{display:inline-flex;align-items:center;gap:.45rem;padding:clamp(.7rem,1.1vw,.88rem) clamp(1.5rem,2.8vw,2.2rem);font-size:clamp(.88rem,1.1vw,1rem);font-weight:600;color:#080a0d;background:#3abdbc;border:none;border-radius:6px;cursor:pointer;text-decoration:none;position:relative;overflow:hidden;transition:transform .3s,box-shadow .3s}
+#genroi-hero .cta-primary::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.2),transparent 60%);opacity:0;transition:opacity .3s}
+#genroi-hero .cta-primary:hover{transform:translateY(-2px) scale(1.03);box-shadow:0 8px 32px rgba(58,189,188,.35),0 0 60px rgba(58,189,188,.12)}
+#genroi-hero .cta-primary:hover::before{opacity:1}
+#genroi-hero .cta-primary .arr{transition:transform .3s}
+#genroi-hero .cta-primary:hover .arr{transform:translateX(4px)}
+#genroi-hero .cta-ghost{display:inline-flex;align-items:center;gap:.35rem;padding:clamp(.65rem,1vw,.82rem) clamp(1.2rem,2vw,1.6rem);font-size:clamp(.85rem,1vw,.95rem);font-weight:600;color:rgba(255,255,255,.66);background:transparent;border:1px solid rgba(255,255,255,.1);border-radius:6px;cursor:pointer;text-decoration:none;transition:border-color .2s,color .2s}
+#genroi-hero .cta-ghost:hover{border-color:rgba(58,189,188,.3);color:#fff}
+
+/* Deliverables strip — what leadership walks away with */
+#genroi-hero .out-bar{display:grid;grid-template-columns:repeat(4,1fr);width:100%;max-width:860px;border:1px solid rgba(58,189,188,.12);border-radius:10px;background:rgba(10,15,22,.6);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);overflow:hidden;margin-top:clamp(.4rem,1vw,.8rem)}
+#genroi-hero .out{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:clamp(1rem,2.2vw,1.6rem) clamp(.5rem,1vw,.9rem);gap:clamp(.5rem,.9vw,.7rem);transition:background .3s}
+#genroi-hero .out:hover{background:rgba(58,189,188,.03)}
+#genroi-hero .out+.out::before{content:'';position:absolute;left:0;top:18%;height:64%;width:1px;background:rgba(58,189,188,.1)}
+#genroi-hero .out svg{width:clamp(22px,2.4vw,26px);height:clamp(22px,2.4vw,26px);stroke:#3abdbc;stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round;flex:none}
+#genroi-hero .out span{font-size:clamp(.7rem,.85vw,.78rem);font-weight:600;color:rgba(255,255,255,.66);letter-spacing:.03em;text-align:center;line-height:1.35;text-wrap:balance}
+
+@media(max-width:640px){
+  #genroi-hero .out-bar{grid-template-columns:repeat(2,1fr);backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(10,15,22,.72)}
+  #genroi-hero .out:nth-child(3)::before{display:none}
+  #genroi-hero .out:nth-child(3),#genroi-hero .out:nth-child(4){border-top:1px solid rgba(58,189,188,.1)}
+}
+@media(max-width:400px){
+  #genroi-hero .cta-row{flex-direction:column;align-items:stretch;width:100%;max-width:320px}
+  #genroi-hero .cta-primary,#genroi-hero .cta-ghost{justify-content:center}
+}
+
+#genroi-hero .a{opacity:0;transform:translateY(20px);filter:blur(6px);transition:opacity .65s ease,transform .65s ease,filter .65s ease}
+#genroi-hero .a.v{opacity:1;transform:translateY(0);filter:blur(0)}
+
+@media(prefers-reduced-motion:reduce){
+  #genroi-hero .a{opacity:1!important;transform:none!important;filter:none!important}
+  #genroi-hero .cta-primary:hover{transform:none}
+}
+</style>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":"GenROI — AI Strategy & Roadmap","serviceType":"AI Strategy and Roadmap Consulting","description":"GenROI is HatchWorks AI's approach to AI strategy. It combines AI-guided discovery at scale with experienced strategists to identify opportunities, assess readiness, and create a roadmap grounded in business value.","url":"https://hatchworks.com/ai-strategy-roadmap/","image":"/wp-content/uploads/2026/06/GENROI.svg","areaServed":"Worldwide","audience":{"@type":"BusinessAudience","audienceType":"Enterprise technology and business leadership"},"provider":{"@type":"Organization","name":"HatchWorks AI","url":"https://hatchworks.com","logo":"/wp-content/uploads/2026/04/HatchWorks-AIor.svg"},"hasOfferCatalog":{"@type":"OfferCatalog","name":"GenROI deliverables","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"AI Opportunity Assessment","description":"A structured view of the most relevant opportunities across your organization."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"AI Readiness Report","description":"An assessment of the data, technology, processes, and organizational conditions behind each opportunity."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Prioritized AI Roadmap","description":"A practical sequence of initiatives based on value, feasibility, and readiness."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Effort and Value Summary","description":"Directional estimates that help leadership compare opportunities and make informed investment decisions."}}]}}
+</script>
+
+<div class="bg-glow bg-glow-1"></div>
+<div class="bg-glow bg-glow-2"></div>
+<canvas id="grhC"></canvas>
+
+<div class="content">
+
+  <div class="logo-wrap a" style="transition-delay:.06s">
+    <img fetchpriority="high" fetchpriority="high" decoding="async" src="/wp-content/uploads/2026/06/GENROI.svg" alt="GenROI — AI Strategy & Roadmap by HatchWorks AI" class="main-logo" width="440" height="116" loading="eager" fetchpriority="high"/>
+  </div>
+
+  <span class="eyebrow a" style="transition-delay:.14s">AI Strategy &amp; Roadmap</span>
+
+  <h1 class="a" style="transition-delay:.22s">Know which AI initiatives to <span class="accent">fund first with GenROI.</span></h1>
+
+  <p class="sub a" style="transition-delay:.32s">GenROI is our approach to AI strategy. It combines AI-guided discovery at scale with experienced strategists to identify opportunities, assess readiness, and create a roadmap grounded in business value.</p>
+
+  <nav class="cta-row a" style="transition-delay:.42s" aria-label="Primary actions">
+    <a href="/company/contact/" class="cta-primary">Start Your AI Strategy <span class="arr" aria-hidden="true">→</span></a>
+    <a href="#genroi-how" class="cta-ghost" data-grh-scroll>See How GenROI Works</a>
+  </nav>
+
+  <div class="out-bar a" style="transition-delay:.54s" role="list" aria-label="What the engagement delivers">
+    <div class="out" role="listitem">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/><path d="M11 8v6M8 11h6"/></svg>
+      <span>AI Opportunity Assessment</span>
+    </div>
+    <div class="out" role="listitem">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-3.2 7-9V5.5L12 3 5 5.5V12c0 5.8 7 9 7 9Z"/><path d="m9 11.5 2 2 4-4"/></svg>
+      <span>AI Readiness Report</span>
+    </div>
+    <div class="out" role="listitem">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h16"/><path d="M4 19V9h4v10"/><path d="M10 19V5h4v14"/><path d="M16 19v-6h4v6"/></svg>
+      <span>Prioritized AI Roadmap</span>
+    </div>
+    <div class="out" role="listitem">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18"/><path d="M5 8.5 12 5l7 3.5"/><path d="M2.5 15a3.5 3.5 0 0 0 5 0L5 9.5 2.5 15Z"/><path d="M16.5 13a3.5 3.5 0 0 0 5 0L19 7.5 16.5 13Z"/></svg>
+      <span>Effort and Value Summary</span>
+    </div>
+  </div>
+
+</div>
+
+<script>
+(function(){
+const root=document.getElementById('genroi-hero');
+const RM=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+const c=document.getElementById('grhC'),ctx=c.getContext('2d');
+let W,H,DPR=1,pts=[],mx=-9e3,my=-9e3,raf=0,running=false;
+
+function rz(){
+  DPR=Math.min(window.devicePixelRatio||1,2);
+  W=root.offsetWidth;H=root.offsetHeight;
+  c.width=Math.round(W*DPR);c.height=Math.round(H*DPR);
+  c.style.width=W+'px';c.style.height=H+'px';
+  ctx.setTransform(DPR,0,0,DPR,0,0);
+  const n=Math.max(24,Math.min(W<760?40:70,Math.round(W*H/11000)));
+  pts=[];
+  for(let i=0;i<n;i++){
+    const r=Math.random();const big=r<.05;const med=r>=.05&&r<.18;
+    pts.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*(big?.005:med?.008:.012),vy:(Math.random()-.5)*(big?.005:med?.008:.012),r:big?3.5:med?1.8:Math.random()*.6+.5,big,med});
+  }
+}
+const LINK=140,LINK2=LINK*LINK;
+let md=[];
+/* Pre-built stroke strings: building rgba() templates per line was allocating
+   thousands of strings a frame. */
+const TEAL=[],CYAN=[];
+for(let i=0;i<14;i++){TEAL.push('rgba(58,189,188,'+(i/40).toFixed(3)+')');CYAN.push('rgba(191,239,239,'+(i/40).toFixed(3)+')')}
+function dr(){
+  ctx.clearRect(0,0,W,H);
+  for(let i=0;i<pts.length;i++){const a=pts[i];md[i]=Math.hypot(a.x-mx,a.y-my)}
+  for(let i=0;i<pts.length;i++){const a=pts[i];
+    for(let j=i+1;j<pts.length;j++){const b=pts[j],dx=a.x-b.x,dy=a.y-b.y,d2=dx*dx+dy*dy;
+      if(d2<LINK2){const d=Math.sqrt(d2);const nr=md[i]<md[j]?md[i]:md[j];const o=.2*(1-d/LINK);const lw=(a.big||b.big)?.9:(a.med||b.med)?.6:.4;
+        const cl=nr<160?CYAN[Math.min(13,(o*52)|0)]:TEAL[Math.min(13,(o*40)|0)];
+        ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.strokeStyle=cl;ctx.lineWidth=lw;ctx.stroke()}}}
+  for(let i=0;i<pts.length;i++){const a=pts[i];a.x+=a.vx;a.y+=a.vy;
+    if(a.x<-10)a.x=W+10;if(a.x>W+10)a.x=-10;if(a.y<-10)a.y=H+10;if(a.y>H+10)a.y=-10;
+    const dm=md[i];
+    if(dm<120&&dm>0){const f=.004*(120-dm);a.vx+=(a.x-mx)/dm*f;a.vy+=(a.y-my)/dm*f;const s=Math.hypot(a.vx,a.vy);if(s>.8){a.vx*=.8/s;a.vy*=.8/s}}
+    if(a.big){ctx.beginPath();ctx.arc(a.x,a.y,a.r+4,0,Math.PI*2);ctx.fillStyle='rgba(58,189,188,.12)';ctx.fill()}
+    if(a.med){ctx.beginPath();ctx.arc(a.x,a.y,a.r+2,0,Math.PI*2);ctx.fillStyle='rgba(58,189,188,.07)';ctx.fill()}
+    ctx.beginPath();ctx.arc(a.x,a.y,a.r,0,Math.PI*2);ctx.fillStyle=a.big?'rgba(58,189,188,.55)':a.med?'rgba(58,189,188,.4)':'rgba(255,255,255,.25)';ctx.fill()}
+  raf=requestAnimationFrame(dr);
+}
+function start(){if(!running&&!RM){running=true;raf=requestAnimationFrame(dr)}}
+function stop(){running=false;cancelAnimationFrame(raf)}
+
+rz();
+let rt;
+function reflow(){clearTimeout(rt);rt=setTimeout(rz,180)}
+window.addEventListener('resize',reflow,{passive:true});
+/* Fonts and the logo SVG can change hero height after first paint — keep the
+   canvas matched to the box instead of only to the window. */
+if('ResizeObserver' in window){new ResizeObserver(reflow).observe(root)}
+if(document.fonts&&document.fonts.ready){document.fonts.ready.then(reflow)}
+root.addEventListener('mousemove',e=>{const r=root.getBoundingClientRect();mx=e.clientX-r.left;my=e.clientY-r.top},{passive:true});
+root.addEventListener('mouseleave',()=>{mx=my=-9e3});
+root.addEventListener('touchmove',e=>{const t=e.touches[0],r=root.getBoundingClientRect();mx=t.clientX-r.left;my=t.clientY-r.top},{passive:true});
+root.addEventListener('touchend',()=>{mx=my=-9e3});
+root.addEventListener('click',e=>{
+  if(RM)return;
+  const r=root.getBoundingClientRect(),cx=e.clientX-r.left,cy=e.clientY-r.top;
+  let el=document.createElement('div');
+  el.style.cssText=`position:absolute;left:${cx}px;top:${cy}px;width:0;height:0;border-radius:50%;border:1.5px solid rgba(58,189,188,.4);pointer-events:none;z-index:5;transform:translate(-50%,-50%);transition:width .5s ease-out,height .5s ease-out,opacity .5s ease-out;opacity:1`;
+  root.appendChild(el);
+  requestAnimationFrame(()=>{el.style.width='180px';el.style.height='180px';el.style.opacity='0'});
+  setTimeout(()=>el.remove(),600);
+});
+if('IntersectionObserver' in window){
+  new IntersectionObserver(es=>{es[0].isIntersecting?start():stop()},{threshold:0}).observe(root);
+}else{start()}
+document.addEventListener('visibilitychange',()=>{document.hidden?stop():start()});
+
+/* Hero is above the fold — reveal on load, not on scroll */
+requestAnimationFrame(()=>requestAnimationFrame(()=>{
+  root.querySelectorAll('.a').forEach(el=>el.classList.add('v'));
+}));
+
+root.querySelectorAll('[data-grh-scroll]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(!t) return;
+    e.preventDefault();
+    window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-90,behavior:RM?'auto':'smooth'});
+  });
+});
+})();
+</script>
+</div>
+</div>
+
+
+<div class="grp-sec">
+<div id="genroi-clarity">
+<style>
+#genroi-clarity{all:initial;display:block;position:relative;background:transparent;font-family:'Open Sans',sans-serif;color:#f0f8ff;width:100%;overflow:visible}
+#genroi-clarity *,#genroi-clarity *::before,#genroi-clarity *::after{box-sizing:border-box;margin:0;padding:0}
+#genroi-clarity .gc-wrap{max-width:1180px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center;gap:clamp(1rem,2vw,1.5rem)}
+
+#genroi-clarity .gc-ey{display:inline-flex;align-items:center;gap:.55rem;font-size:clamp(.66rem,.9vw,.78rem);font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#3abdbc}
+#genroi-clarity .gc-ey::before{content:'';width:6px;height:6px;border-radius:50%;background:currentColor;flex:none;animation:grcPulse 2.4s ease-in-out infinite}
+@keyframes grcPulse{0%,100%{opacity:1}50%{opacity:.35}}
+
+#genroi-clarity h2{font-family:'Space Grotesk','Open Sans',sans-serif;font-size:clamp(1.7rem,3.6vw,2.9rem);font-weight:700;line-height:1.1;letter-spacing:-.028em;color:#fff;max-width:22ch;text-wrap:balance}
+#genroi-clarity h2 .ac{color:#3abdbc}
+#genroi-clarity .gc-lede{font-size:clamp(.9rem,1.15vw,1.05rem);line-height:1.62;color:rgba(255,255,255,.66);max-width:68ch;text-wrap:pretty}
+#genroi-clarity .gc-kick{font-size:clamp(.82rem,.98vw,.9rem);font-weight:700;letter-spacing:.02em;color:#bfefef;margin-top:clamp(.4rem,1vw,.8rem)}
+
+#genroi-clarity .gc-qs{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.5rem,.85vw,.7rem);width:100%;margin-top:clamp(.2rem,.6vw,.4rem);text-align:left}
+@media(max-width:900px){#genroi-clarity .gc-qs{grid-template-columns:1fr;max-width:520px;margin-left:auto;margin-right:auto}}
+
+#genroi-clarity .gc-q{position:relative;display:grid;grid-template-columns:auto 1fr;gap:clamp(.9rem,1.4vw,1.15rem);align-items:center;padding:clamp(1.3rem,2.2vw,1.8rem);border:1px solid rgba(255,255,255,.06);border-radius:clamp(12px,1.4vw,16px);background:rgba(255,255,255,.025);overflow:hidden;transition:border-color .3s,background .3s,transform .3s}
+#genroi-clarity .gc-q::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#3abdbc,#71c7d2);transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+#genroi-clarity .gc-q:hover{border-color:rgba(255,255,255,.12);background:rgba(255,255,255,.035);transform:translateY(-3px)}
+#genroi-clarity .gc-q:hover::before{transform:scaleX(1)}
+#genroi-clarity .gc-num{width:40px;height:40px;border-radius:11px;display:grid;place-items:center;flex:none;font-family:'Space Grotesk',sans-serif;font-size:.9rem;font-weight:800;color:#3abdbc;background:rgba(58,189,188,.07);border:1px solid rgba(58,189,188,.16);transition:color .3s,background .3s,border-color .3s}
+#genroi-clarity .gc-q:hover .gc-num{color:#bfefef;background:rgba(58,189,188,.13);border-color:rgba(58,189,188,.34)}
+#genroi-clarity .gc-qt{font-family:'Space Grotesk','Open Sans',sans-serif;font-size:clamp(.98rem,1.28vw,1.14rem);font-weight:700;line-height:1.26;letter-spacing:-.018em;color:rgba(255,255,255,.86);text-wrap:balance;transition:color .3s}
+#genroi-clarity .gc-q:hover .gc-qt{color:#fff}
+
+#genroi-clarity .gc-a{opacity:0;transform:translateY(18px);filter:blur(5px);transition:opacity .7s ease,transform .7s ease,filter .7s ease}
+#genroi-clarity .gc-a.gc-v{opacity:1;transform:translateY(0);filter:blur(0)}
+@media(prefers-reduced-motion:reduce){#genroi-clarity .gc-a{opacity:1!important;transform:none!important;filter:none!important}}
+</style>
+
+<div class="gc-wrap">
+  <span class="gc-ey gc-a">The problem</span>
+  <h2 class="gc-a" style="transition-delay:.06s">AI opportunity is everywhere. <span class="ac">Clarity isn't.</span></h2>
+  <p class="gc-lede gc-a" style="transition-delay:.12s">Most organizations aren't short on AI ideas. They're short on a reliable way to compare those ideas, connect them to business priorities, and decide what comes first.</p>
+  <p class="gc-kick gc-a" style="transition-delay:.16s">GenROI gives leadership a clear answer to three questions:</p>
+
+  <div class="gc-qs">
+    <article class="gc-q gc-a" style="transition-delay:.2s">
+      <span class="gc-num">01</span>
+      <p class="gc-qt">Where can AI create meaningful value?</p>
+    </article>
+    <article class="gc-q gc-a" style="transition-delay:.27s">
+      <span class="gc-num">02</span>
+      <p class="gc-qt">What are we ready to pursue?</p>
+    </article>
+    <article class="gc-q gc-a" style="transition-delay:.34s">
+      <span class="gc-num">03</span>
+      <p class="gc-qt">What should we do first?</p>
+    </article>
+  </div>
+</div>
+
+<script>
+(function(){
+var obs=new IntersectionObserver(function(es){
+  for(var i=0;i<es.length;i++){if(es[i].isIntersecting){es[i].target.classList.add('gc-v');obs.unobserve(es[i].target)}}
+},{threshold:0.08});
+var a=document.querySelectorAll('#genroi-clarity .gc-a');
+for(var i=0;i<a.length;i++) obs.observe(a[i]);
+})();
+</script>
+</div>
+</div>
+
+
+<div class="grp-sec">
+<div id="genroi-coverage">
+<style>
+#genroi-coverage{all:initial;display:block;position:relative;background:transparent;font-family:'Open Sans',sans-serif;color:#f0f8ff;width:100%;overflow:visible}
+#genroi-coverage *,#genroi-coverage *::before,#genroi-coverage *::after{box-sizing:border-box;margin:0;padding:0}
+#genroi-coverage .gv-wrap{max-width:1180px;margin:0 auto}
+
+#genroi-coverage .gv-head{max-width:64ch;margin:0 auto clamp(2rem,3.8vw,3.2rem);display:flex;flex-direction:column;align-items:center;text-align:center;gap:clamp(.85rem,1.5vw,1.15rem)}
+#genroi-coverage .gv-ey{display:inline-flex;align-items:center;gap:.55rem;font-size:clamp(.66rem,.9vw,.78rem);font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#3abdbc}
+#genroi-coverage .gv-ey::before{content:'';width:6px;height:6px;border-radius:50%;background:currentColor;flex:none;animation:grvPulse 2.4s ease-in-out infinite}
+@keyframes grvPulse{0%,100%{opacity:1}50%{opacity:.35}}
+#genroi-coverage h2{font-family:'Space Grotesk','Open Sans',sans-serif;font-size:clamp(1.7rem,3.6vw,2.9rem);font-weight:700;line-height:1.1;letter-spacing:-.028em;color:#fff;max-width:24ch;text-wrap:balance}
+#genroi-coverage h2 .ac{color:#3abdbc}
+
+#genroi-coverage .gv-row{display:grid;grid-template-columns:1fr 1fr;gap:clamp(.5rem,.85vw,.7rem)}
+@media(max-width:900px){#genroi-coverage .gv-row{grid-template-columns:1fr;max-width:540px;margin:0 auto}}
+
+#genroi-coverage .gv-card{position:relative;display:flex;flex-direction:column;gap:clamp(1rem,1.8vw,1.4rem);padding:clamp(1.6rem,2.6vw,2.2rem);border:1px solid rgba(255,255,255,.06);border-radius:clamp(14px,1.5vw,18px);background:rgba(255,255,255,.025);overflow:hidden}
+#genroi-coverage .gv-card.is-roi{border-color:rgba(58,189,188,.18);background:rgba(58,189,188,.035)}
+
+#genroi-coverage .gv-lab{display:inline-flex;align-items:center;gap:.45rem;align-self:flex-start;padding:.24rem .68rem;border-radius:20px;font-size:clamp(.7rem,.8vw,.76rem);font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.68);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)}
+#genroi-coverage .gv-card.is-roi .gv-lab{color:#5fd3d2;background:rgba(58,189,188,.1);border-color:rgba(58,189,188,.2)}
+
+#genroi-coverage .gv-dots{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(5px,.7vw,9px)}
+#genroi-coverage .gv-dots i{display:block;width:100%;aspect-ratio:1;border-radius:50%;background:rgba(255,255,255,.07);transition:background .5s ease,box-shadow .5s ease,transform .5s ease}
+#genroi-coverage .gv-card.is-trad .gv-dots i.on.lit{background:rgba(255,255,255,.42)}
+#genroi-coverage .gv-card.is-roi .gv-dots i.on.lit{background:#3abdbc;box-shadow:0 0 0 2px rgba(58,189,188,.12)}
+
+#genroi-coverage .gv-txt{font-size:clamp(.86rem,1.02vw,.95rem);line-height:1.6;color:rgba(255,255,255,.66);text-wrap:pretty;margin-top:auto}
+#genroi-coverage .gv-card.is-roi .gv-txt{color:rgba(255,255,255,.68)}
+#genroi-coverage .gv-txt strong{color:#bfefef;font-weight:700}
+
+#genroi-coverage .gv-split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1rem,2.4vw,2.4rem);align-items:center;margin-top:clamp(.5rem,.85vw,.7rem);padding:clamp(1.4rem,2.4vw,2rem) clamp(1.6rem,2.8vw,2.4rem);border:1px solid rgba(255,255,255,.06);border-radius:clamp(14px,1.5vw,18px);background:rgba(255,255,255,.02)}
+@media(max-width:760px){#genroi-coverage .gv-split{grid-template-columns:1fr;gap:1.2rem;max-width:540px;margin-left:auto;margin-right:auto}}
+#genroi-coverage .gv-half{display:grid;grid-template-columns:auto 1fr;gap:clamp(.8rem,1.3vw,1.05rem);align-items:center}
+#genroi-coverage .gv-ico{width:clamp(42px,4vw,50px);height:clamp(42px,4vw,50px);border-radius:12px;display:grid;place-items:center;flex:none;color:#3abdbc;background:rgba(58,189,188,.07);border:1px solid rgba(58,189,188,.16)}
+#genroi-coverage .gv-ico svg{width:clamp(21px,2vw,24px);height:clamp(21px,2vw,24px);stroke:currentColor;stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+#genroi-coverage .gv-half p{font-size:clamp(.88rem,1.08vw,1rem);line-height:1.5;color:rgba(255,255,255,.68);text-wrap:pretty}
+#genroi-coverage .gv-half p b{color:#fff;font-weight:700}
+
+#genroi-coverage .gv-a{opacity:0;transform:translateY(18px);filter:blur(5px);transition:opacity .7s ease,transform .7s ease,filter .7s ease}
+#genroi-coverage .gv-a.gv-v{opacity:1;transform:translateY(0);filter:blur(0)}
+@media(prefers-reduced-motion:reduce){#genroi-coverage .gv-a{opacity:1!important;transform:none!important;filter:none!important}#genroi-coverage .gv-dots i{transition:none!important}}
+</style>
+
+<div class="gv-wrap">
+  <div class="gv-head">
+    <span class="gv-ey gv-a">Why GenROI is different</span>
+    <h2 class="gv-a" style="transition-delay:.06s">See more of the business. <span class="ac">Make better decisions.</span></h2>
+  </div>
+
+  <div class="gv-row">
+    <div class="gv-card is-trad gv-a" style="transition-delay:.06s">
+      <span class="gv-lab">Traditional discovery</span>
+      <div class="gv-dots" data-lit="4,17,29,42,55" aria-hidden="true"></div>
+      <p class="gv-txt">Traditional discovery often depends on a handful of workshops and the loudest voices in the room.</p>
+    </div>
+
+    <div class="gv-card is-roi gv-a" style="transition-delay:.14s">
+      <span class="gv-lab">GenROI discovery</span>
+      <div class="gv-dots" data-lit="all" aria-hidden="true"></div>
+      <p class="gv-txt">GenROI uses AI-guided interviews to gather perspectives across more roles, teams, and functions. Our strategists then <strong>validate, challenge, and synthesize</strong> what we learn into a focused strategy.</p>
+    </div>
+  </div>
+
+  <div class="gv-split gv-a" style="transition-delay:.22s">
+    <div class="gv-half">
+      <span class="gv-ico"><svg viewBox="0 0 24 24"><path d="M3 12h4l2.5-7 5 14L17 12h4"/></svg></span>
+      <p><b>AI gives the process scale.</b></p>
+    </div>
+    <div class="gv-half">
+      <span class="gv-ico"><svg viewBox="0 0 24 24"><path d="M15 20v-1.5a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4V20"/><circle cx="8.5" cy="7" r="3.5"/><path d="m16 11.5 2 2 4-4"/></svg></span>
+      <p><b>Our experts bring context, judgment, and accountability.</b></p>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+var root=document.getElementById('genroi-coverage');
+var RM=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var TOTAL=60;
+
+root.querySelectorAll('.gv-dots').forEach(function(box){
+  var spec=box.getAttribute('data-lit');
+  var lit=null;
+  if(spec!=='all'){lit={};spec.split(',').forEach(function(n){lit[parseInt(n,10)]=1})}
+  var frag=document.createDocumentFragment();
+  for(var i=0;i<TOTAL;i++){
+    var d=document.createElement('i');
+    /* "all" is a broad-coverage look, not a literal count — leave a few gaps */
+    var on=lit?!!lit[i]:(i%13!==7&&i%17!==3);
+    if(on){d.className='on';d.style.transitionDelay=(RM?0:(i*14))+'ms'}
+    frag.appendChild(d);
+  }
+  box.appendChild(frag);
+});
+
+var obs=new IntersectionObserver(function(es){
+  for(var i=0;i<es.length;i++){
+    if(es[i].isIntersecting){
+      es[i].target.classList.add('gv-v');
+      es[i].target.querySelectorAll('.gv-dots i.on').forEach(function(d){d.classList.add('lit')});
+      obs.unobserve(es[i].target);
+    }
+  }
+},{threshold:0.08});
+var a=root.querySelectorAll('.gv-a');
+for(var i=0;i<a.length;i++) obs.observe(a[i]);
+})();
+</script>
+</div>
+</div>
+
+
+<div class="grp-sec" id="genroi-how">
+<div id="genroi-steps">
+<style>
+#genroi-steps{all:initial;display:block;position:relative;background:transparent;font-family:'Open Sans',sans-serif;color:#f0f8ff;width:100%;overflow:visible}
+#genroi-steps *,#genroi-steps *::before,#genroi-steps *::after{box-sizing:border-box;margin:0;padding:0}
+#genroi-steps .gs-wrap{max-width:1280px;margin:0 auto}
+
+#genroi-steps .gs-head{max-width:62ch;margin:0 auto clamp(2rem,3.8vw,3.2rem);display:flex;flex-direction:column;align-items:center;text-align:center;gap:clamp(.85rem,1.5vw,1.15rem)}
+#genroi-steps .gs-ey{display:inline-flex;align-items:center;gap:.55rem;font-size:clamp(.66rem,.9vw,.78rem);font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#3abdbc}
+#genroi-steps .gs-ey::before{content:'';width:6px;height:6px;border-radius:50%;background:currentColor;flex:none;animation:grsPulse 2.4s ease-in-out infinite}
+@keyframes grsPulse{0%,100%{opacity:1}50%{opacity:.35}}
+#genroi-steps h2{font-family:'Space Grotesk','Open Sans',sans-serif;font-size:clamp(1.7rem,3.6vw,2.9rem);font-weight:700;line-height:1.1;letter-spacing:-.028em;color:#fff;max-width:24ch;text-wrap:balance}
+#genroi-steps h2 .ac{color:#3abdbc}
+
+/* Rail across the four steps — desktop only */
+#genroi-steps .gs-rail{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(.5rem,.85vw,.7rem);margin-bottom:clamp(1rem,1.6vw,1.3rem)}
+#genroi-steps .gs-node{display:flex;align-items:center;gap:6px}
+#genroi-steps .gs-node i{height:1px;flex:1;background:rgba(58,189,188,.22)}
+#genroi-steps .gs-node b{width:9px;height:9px;border-radius:50%;flex:none;background:#3abdbc;box-shadow:0 0 0 4px rgba(58,189,188,.1)}
+#genroi-steps .gs-node:first-child i.l,#genroi-steps .gs-node:last-child i.r{background:transparent}
+@media(max-width:1080px){#genroi-steps .gs-rail{display:none}}
+
+#genroi-steps .gs-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(.5rem,.85vw,.7rem)}
+@media(max-width:1080px){#genroi-steps .gs-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){#genroi-steps .gs-grid{grid-template-columns:1fr;max-width:420px;margin:0 auto}}
+
+#genroi-steps .gs-card{position:relative;display:flex;flex-direction:column;gap:clamp(.75rem,1.3vw,1rem);padding:clamp(1.5rem,2.4vw,2rem) clamp(1.3rem,1.9vw,1.6rem);border:1px solid rgba(255,255,255,.06);border-radius:clamp(14px,1.5vw,18px);background:rgba(255,255,255,.025);overflow:hidden;transition:border-color .3s,background .3s,transform .3s,box-shadow .3s}
+#genroi-steps .gs-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#3abdbc,#71c7d2);transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+#genroi-steps .gs-card:hover{border-color:rgba(255,255,255,.12);background:rgba(255,255,255,.035);transform:translateY(-3px);box-shadow:0 12px 40px rgba(0,0,0,.2)}
+#genroi-steps .gs-card:hover::before{transform:scaleX(1)}
+
+#genroi-steps .gs-top{display:flex;align-items:center;justify-content:space-between;gap:.8rem}
+#genroi-steps .gs-ico{width:clamp(46px,4.4vw,54px);height:clamp(46px,4.4vw,54px);border-radius:13px;display:grid;place-items:center;flex:none;color:#3abdbc;background:rgba(58,189,188,.07);border:1px solid rgba(58,189,188,.16);transition:color .3s,background .3s,border-color .3s,box-shadow .3s}
+#genroi-steps .gs-ico svg{width:clamp(22px,2.1vw,26px);height:clamp(22px,2.1vw,26px);stroke:currentColor;stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+#genroi-steps .gs-card:hover .gs-ico{color:#bfefef;background:rgba(58,189,188,.13);border-color:rgba(58,189,188,.34);box-shadow:0 0 0 5px rgba(58,189,188,.06)}
+#genroi-steps .gs-n{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.5rem,2.4vw,2rem);font-weight:800;letter-spacing:-.02em;color:rgba(255,255,255,.1);line-height:1;transition:color .3s}
+#genroi-steps .gs-card:hover .gs-n{color:rgba(58,189,188,.35)}
+
+#genroi-steps .gs-name{font-family:'Space Grotesk','Open Sans',sans-serif;font-size:clamp(1.15rem,1.6vw,1.4rem);font-weight:700;color:#fff;line-height:1.15;letter-spacing:-.02em}
+#genroi-steps .gs-txt{font-size:clamp(.84rem,1vw,.93rem);line-height:1.58;color:rgba(255,255,255,.66);text-wrap:pretty}
+
+#genroi-steps .gs-a{opacity:0;transform:translateY(20px);filter:blur(5px);transition:opacity .7s ease,transform .7s ease,filter .7s ease}
+#genroi-steps .gs-a.gs-v{opacity:1;transform:translateY(0);filter:blur(0)}
+@media(prefers-reduced-motion:reduce){#genroi-steps .gs-a{opacity:1!important;transform:none!important;filter:none!important}}
+</style>
+
+<div class="gs-wrap">
+  <div class="gs-head">
+    <span class="gs-ey gs-a">The process</span>
+    <h2 class="gs-a" style="transition-delay:.06s">From scattered ideas to <span class="ac">a focused roadmap</span></h2>
+  </div>
+
+  <div class="gs-rail gs-a" style="transition-delay:.04s" aria-hidden="true">
+    <span class="gs-node"><i class="l"></i><b></b><i class="r"></i></span>
+    <span class="gs-node"><i class="l"></i><b></b><i class="r"></i></span>
+    <span class="gs-node"><i class="l"></i><b></b><i class="r"></i></span>
+    <span class="gs-node"><i class="l"></i><b></b><i class="r"></i></span>
+  </div>
+
+  <div class="gs-grid">
+    <article class="gs-card gs-a" style="transition-delay:.06s">
+      <div class="gs-top">
+        <span class="gs-ico"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg></span>
+        <span class="gs-n">01</span>
+      </div>
+      <h3 class="gs-name">Discover</h3>
+      <p class="gs-txt">Uncover operational challenges, unmet needs, and AI opportunities across the organization.</p>
+    </article>
+
+    <article class="gs-card gs-a" style="transition-delay:.13s">
+      <div class="gs-top">
+        <span class="gs-ico"><svg viewBox="0 0 24 24"><path d="M12 3v3"/><path d="M4.5 20a7.5 7.5 0 0 1 15 0Z"/><path d="M12 6 6.5 20M12 6l5.5 14"/><circle cx="12" cy="4.5" r="1.5"/></svg></span>
+        <span class="gs-n">02</span>
+      </div>
+      <h3 class="gs-name">Assess</h3>
+      <p class="gs-txt">Evaluate each opportunity based on potential value, feasibility, strategic fit, and organizational readiness.</p>
+    </article>
+
+    <article class="gs-card gs-a" style="transition-delay:.2s">
+      <div class="gs-top">
+        <span class="gs-ico"><svg viewBox="0 0 24 24"><path d="M4 6h11M4 12h7M4 18h13"/><path d="m17 4 3 3-3 3"/></svg></span>
+        <span class="gs-n">03</span>
+      </div>
+      <h3 class="gs-name">Prioritize</h3>
+      <p class="gs-txt">Weigh dependencies, risks, and tradeoffs to identify the initiatives worth pursuing first.</p>
+    </article>
+
+    <article class="gs-card gs-a" style="transition-delay:.27s">
+      <div class="gs-top">
+        <span class="gs-ico"><svg viewBox="0 0 24 24"><path d="M4 18c3-6 6 4 9-2s4-6 7-8"/><circle cx="4" cy="18" r="1.6"/><circle cx="20" cy="8" r="1.6"/><path d="M9.5 16.6h.01M16 12h.01"/></svg></span>
+        <span class="gs-n">04</span>
+      </div>
+      <h3 class="gs-name">Roadmap</h3>
+      <p class="gs-txt">Turn the strongest opportunities into a sequenced plan with clear recommendations and next steps.</p>
+    </article>
+  </div>
+</div>
+
+<script>
+(function(){
+var obs=new IntersectionObserver(function(es){
+  for(var i=0;i<es.length;i++){if(es[i].isIntersecting){es[i].target.classList.add('gs-v');obs.unobserve(es[i].target)}}
+},{threshold:0.08});
+var a=document.querySelectorAll('#genroi-steps .gs-a');
+for(var i=0;i<a.length;i++) obs.observe(a[i]);
+})();
+</script>
+</div>
+</div>
+
+
+<div class="grp-sec">
+<div id="genroi-deliverables">
+<style>
+#genroi-deliverables{all:initial;display:block;position:relative;background:transparent;font-family:'Open Sans',sans-serif;color:#f0f8ff;width:100%;overflow:visible}
+#genroi-deliverables *,#genroi-deliverables *::before,#genroi-deliverables *::after{box-sizing:border-box;margin:0;padding:0}
+#genroi-deliverables .gd-wrap{max-width:1120px;margin:0 auto}
+
+#genroi-deliverables .gd-head{max-width:60ch;margin:0 auto clamp(1.6rem,3vw,2.4rem);display:flex;flex-direction:column;align-items:center;text-align:center;gap:clamp(.85rem,1.5vw,1.15rem)}
+#genroi-deliverables .gd-ey{display:inline-flex;align-items:center;gap:.55rem;font-size:clamp(.66rem,.9vw,.78rem);font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#3abdbc}
+#genroi-deliverables .gd-ey::before{content:'';width:6px;height:6px;border-radius:50%;background:currentColor;flex:none;animation:grdPulse 2.4s ease-in-out infinite}
+@keyframes grdPulse{0%,100%{opacity:1}50%{opacity:.35}}
+#genroi-deliverables h2{font-family:'Space Grotesk','Open Sans',sans-serif;font-size:clamp(1.7rem,3.6vw,2.9rem);font-weight:700;line-height:1.1;letter-spacing:-.028em;color:#fff;max-width:24ch;text-wrap:balance}
+#genroi-deliverables h2 .ac{color:#3abdbc}
+
+/* Hairline list, two up — deliberately quieter than the process cards */
+#genroi-deliverables .gd-list{display:grid;grid-template-columns:1fr 1fr;column-gap:clamp(2rem,4vw,4rem)}
+@media(max-width:820px){#genroi-deliverables .gd-list{grid-template-columns:1fr;max-width:560px;margin:0 auto}}
+
+#genroi-deliverables .gd-item{display:flex;flex-direction:column;gap:.55rem;padding:clamp(1.4rem,2.2vw,1.8rem) 0;border-top:1px solid rgba(255,255,255,.07)}
+#genroi-deliverables .gd-top{display:flex;align-items:center;gap:.8rem}
+#genroi-deliverables .gd-ico{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;flex:none;color:#3abdbc;background:rgba(58,189,188,.07);border:1px solid rgba(58,189,188,.16);transition:color .3s,background .3s,border-color .3s}
+#genroi-deliverables .gd-ico svg{width:19px;height:19px;stroke:currentColor;stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+#genroi-deliverables .gd-item:hover .gd-ico{color:#bfefef;background:rgba(58,189,188,.13);border-color:rgba(58,189,188,.34)}
+#genroi-deliverables .gd-name{font-family:'Open Sans',sans-serif;font-size:clamp(1rem,1.24vw,1.14rem);font-weight:800;color:#fff;line-height:1.2;letter-spacing:-.015em}
+#genroi-deliverables .gd-txt{font-size:clamp(.85rem,1vw,.94rem);line-height:1.6;color:rgba(255,255,255,.66);text-wrap:pretty}
+
+#genroi-deliverables .gd-note{display:grid;grid-template-columns:auto 1fr;gap:.75rem;align-items:center;margin-top:clamp(1.4rem,2.4vw,2rem);padding:clamp(1.1rem,1.9vw,1.5rem) clamp(1.3rem,2.2vw,1.8rem);border:1px solid rgba(58,189,188,.18);border-radius:clamp(12px,1.4vw,16px);background:rgba(58,189,188,.04)}
+#genroi-deliverables .gd-note svg{width:20px;height:20px;stroke:#3abdbc;stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round;flex:none}
+#genroi-deliverables .gd-note p{font-size:clamp(.88rem,1.08vw,1rem);line-height:1.5;color:rgba(255,255,255,.78);text-wrap:pretty}
+#genroi-deliverables .gd-note p strong{color:#bfefef;font-weight:700}
+
+#genroi-deliverables .gd-a{opacity:0;transform:translateY(18px);filter:blur(5px);transition:opacity .7s ease,transform .7s ease,filter .7s ease}
+#genroi-deliverables .gd-a.gd-v{opacity:1;transform:translateY(0);filter:blur(0)}
+@media(prefers-reduced-motion:reduce){#genroi-deliverables .gd-a{opacity:1!important;transform:none!important;filter:none!important}}
+</style>
+
+<div class="gd-wrap">
+  <div class="gd-head">
+    <span class="gd-ey gd-a">Deliverables</span>
+    <h2 class="gd-a" style="transition-delay:.06s">What you get</h2>
+  </div>
+
+  <div class="gd-list">
+    <article class="gd-item gd-a" style="transition-delay:.06s">
+      <div class="gd-top">
+        <span class="gd-ico"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <h3 class="gd-name">AI Opportunity Assessment</h3>
+      </div>
+      <p class="gd-txt">A structured view of the most relevant opportunities across your organization.</p>
+    </article>
+
+    <article class="gd-item gd-a" style="transition-delay:.12s">
+      <div class="gd-top">
+        <span class="gd-ico"><svg viewBox="0 0 24 24"><path d="M12 21s7-3.2 7-9V5.5L12 3 5 5.5V12c0 5.8 7 9 7 9Z"/><path d="m9 11.5 2 2 4-4"/></svg></span>
+        <h3 class="gd-name">AI Readiness Report</h3>
+      </div>
+      <p class="gd-txt">An assessment of the data, technology, processes, and organizational conditions behind each opportunity.</p>
+    </article>
+
+    <article class="gd-item gd-a" style="transition-delay:.18s">
+      <div class="gd-top">
+        <span class="gd-ico"><svg viewBox="0 0 24 24"><path d="M4 19h16"/><path d="M4 19V9h4v10"/><path d="M10 19V5h4v14"/><path d="M16 19v-6h4v6"/></svg></span>
+        <h3 class="gd-name">Prioritized AI Roadmap</h3>
+      </div>
+      <p class="gd-txt">A practical sequence of initiatives based on value, feasibility, and readiness.</p>
+    </article>
+
+    <article class="gd-item gd-a" style="transition-delay:.24s">
+      <div class="gd-top">
+        <span class="gd-ico"><svg viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M5 8.5 12 5l7 3.5"/><path d="M2.5 15a3.5 3.5 0 0 0 5 0L5 9.5 2.5 15Z"/><path d="M16.5 13a3.5 3.5 0 0 0 5 0L19 7.5 16.5 13Z"/></svg></span>
+        <h3 class="gd-name">Effort and Value Summary</h3>
+      </div>
+      <p class="gd-txt">Directional estimates that help leadership compare opportunities and make informed investment decisions.</p>
+    </article>
+  </div>
+
+  <div class="gd-note gd-a" style="transition-delay:.3s">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg>
+    <p>Every recommendation includes a clear <strong>prioritization rationale</strong> and an <strong>executive-ready summary.</strong></p>
+  </div>
+</div>
+
+<script>
+(function(){
+var obs=new IntersectionObserver(function(es){
+  for(var i=0;i<es.length;i++){if(es[i].isIntersecting){es[i].target.classList.add('gd-v');obs.unobserve(es[i].target)}}
+},{threshold:0.08});
+var a=document.querySelectorAll('#genroi-deliverables .gd-a');
+for(var i=0;i<a.length;i++) obs.observe(a[i]);
+})();
+</script>
+</div>
+</div>
+
+
+<div class="grp-sec">
+<div id="genroi-journey">
+<style>
+#genroi-journey{all:initial;display:block;position:relative;background:transparent;font-family:'Open Sans',sans-serif;color:#f0f8ff;width:100%;overflow:visible}
+#genroi-journey *,#genroi-journey *::before,#genroi-journey *::after{box-sizing:border-box;margin:0;padding:0}
+#genroi-journey .gj-wrap{max-width:1280px;margin:0 auto}
+
+#genroi-journey .gj-head{max-width:64ch;margin:0 auto clamp(2rem,3.8vw,3.2rem);display:flex;flex-direction:column;align-items:center;text-align:center;gap:clamp(.85rem,1.5vw,1.15rem)}
+#genroi-journey .gj-ey{display:inline-flex;align-items:center;gap:.55rem;font-size:clamp(.66rem,.9vw,.78rem);font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#3abdbc}
+#genroi-journey .gj-ey::before{content:'';width:6px;height:6px;border-radius:50%;background:currentColor;flex:none;animation:grjPulse 2.4s ease-in-out infinite}
+@keyframes grjPulse{0%,100%{opacity:1}50%{opacity:.35}}
+#genroi-journey h2{font-family:'Space Grotesk','Open Sans',sans-serif;font-size:clamp(1.7rem,3.6vw,2.9rem);font-weight:700;line-height:1.1;letter-spacing:-.028em;color:#fff;max-width:24ch;text-wrap:balance}
+#genroi-journey h2 .ac{color:#3abdbc}
+#genroi-journey .gj-lede{font-size:clamp(.9rem,1.15vw,1.05rem);line-height:1.6;color:rgba(255,255,255,.66);max-width:66ch;text-wrap:pretty}
+
+#genroi-journey .gj-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.5rem,.85vw,.7rem)}
+@media(max-width:840px){#genroi-journey .gj-steps{grid-template-columns:1fr;max-width:460px;margin:0 auto}}
+
+#genroi-journey .gj-step{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;gap:clamp(.75rem,1.3vw,1rem);padding:clamp(1.5rem,2.4vw,2rem) clamp(1.2rem,1.8vw,1.6rem);border:1px solid rgba(255,255,255,.06);border-radius:clamp(14px,1.5vw,18px);background:rgba(255,255,255,.025);overflow:hidden;transition:border-color .3s,background .3s,transform .3s}
+#genroi-journey .gj-step::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#3abdbc,#71c7d2);transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+#genroi-journey .gj-step:hover{border-color:rgba(255,255,255,.12);background:rgba(255,255,255,.035);transform:translateY(-3px)}
+#genroi-journey .gj-step:hover::before{transform:scaleX(1)}
+
+#genroi-journey .gj-ico{width:clamp(42px,4vw,50px);height:clamp(42px,4vw,50px);border-radius:12px;display:grid;place-items:center;color:rgba(255,255,255,.32);background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);transition:color .3s,background .3s,border-color .3s}
+#genroi-journey .gj-ico svg{width:clamp(20px,1.9vw,23px);height:clamp(20px,1.9vw,23px);stroke:currentColor;stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+#genroi-journey .gj-step:hover .gj-ico{color:#3abdbc;border-color:rgba(58,189,188,.28);background:rgba(58,189,188,.07)}
+
+#genroi-journey .gj-tag{font-family:'Space Grotesk',sans-serif;font-size:clamp(.72rem,.86vw,.8rem);font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.68);transition:color .3s}
+#genroi-journey .gj-step:hover .gj-tag{color:#3abdbc}
+#genroi-journey .gj-txt{font-family:'Space Grotesk','Open Sans',sans-serif;font-size:clamp(1rem,1.4vw,1.18rem);font-weight:700;line-height:1.24;letter-spacing:-.02em;color:rgba(255,255,255,.82);text-wrap:balance;transition:color .3s}
+#genroi-journey .gj-step:hover .gj-txt{color:#fff}
+
+#genroi-journey .gj-step.is-now{border-color:rgba(58,189,188,.28);background:linear-gradient(165deg,rgba(58,189,188,.1),rgba(255,255,255,.02) 62%)}
+#genroi-journey .gj-step.is-now::before{transform:scaleX(1)}
+#genroi-journey .gj-step.is-now .gj-ico{color:#3abdbc;border-color:rgba(58,189,188,.3);background:rgba(58,189,188,.09)}
+#genroi-journey .gj-step.is-now .gj-tag{color:#3abdbc}
+#genroi-journey .gj-step.is-now .gj-txt{color:#fff}
+
+#genroi-journey .gj-links{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:clamp(1rem,2.4vw,2.2rem);margin-top:clamp(1.6rem,2.8vw,2.4rem)}
+#genroi-journey .gj-link{position:relative;display:inline-flex;align-items:center;gap:.45rem;font-size:clamp(.86rem,1.05vw,.96rem);font-weight:700;color:#3abdbc;text-decoration:none;transition:color .25s}
+#genroi-journey .gj-link:hover{color:#bfefef}
+#genroi-journey .gj-link::after{content:'';position:absolute;left:0;bottom:-4px;width:100%;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .3s cubic-bezier(.2,.8,.2,1)}
+#genroi-journey .gj-link:hover::after{transform:scaleX(1)}
+#genroi-journey .gj-link svg{width:15px;height:15px;stroke:currentColor;stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round;transition:transform .28s cubic-bezier(.2,.8,.2,1)}
+#genroi-journey .gj-link:hover svg{transform:translate(3px,-3px)}
+#genroi-journey .gj-cta{display:inline-flex;align-items:center;gap:.5rem;padding:clamp(.7rem,1.1vw,.88rem) clamp(1.6rem,2.8vw,2.2rem);border-radius:8px;font-size:clamp(.86rem,1.05vw,.96rem);font-weight:700;color:#080a0d;background:#3abdbc;text-decoration:none;transition:transform .25s,box-shadow .25s,background .25s,gap .25s}
+#genroi-journey .gj-cta:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(58,189,188,.3);background:#44cac9;gap:.7rem}
+#genroi-journey .gj-cta svg{width:16px;height:16px;stroke:currentColor;stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+
+#genroi-journey .gj-a{opacity:0;transform:translateY(20px);filter:blur(5px);transition:opacity .7s ease,transform .7s ease,filter .7s ease}
+#genroi-journey .gj-a.gj-v{opacity:1;transform:translateY(0);filter:blur(0)}
+@media(prefers-reduced-motion:reduce){#genroi-journey .gj-a{opacity:1!important;transform:none!important;filter:none!important}}
+</style>
+
+<div class="gj-wrap">
+  <div class="gj-head">
+    <span class="gj-ey gj-a">Where GenROI fits</span>
+    <h2 class="gj-a" style="transition-delay:.06s">Strategy that <span class="ac">leads somewhere</span></h2>
+    <p class="gj-lede gj-a" style="transition-delay:.12s">GenROI can stand alone or serve as the Decide phase of a broader AI transformation:</p>
+  </div>
+
+  <div class="gj-steps">
+    <article class="gj-step is-now gj-a" style="transition-delay:.06s">
+      <span class="gj-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5.2-5.2 2 2-5.2 5.2-2Z"/></svg></span>
+      <span class="gj-tag">Step 01 — You are here</span>
+      <p class="gj-txt">Decide with AI Strategy (GenROI).</p>
+    </article>
+
+    <article class="gj-step gj-a" style="transition-delay:.14s">
+      <span class="gj-ico"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg></span>
+      <span class="gj-tag">Step 02 — Build</span>
+      <p class="gj-txt">Build with AI-Driven Development (GenDD).</p>
+    </article>
+
+    <article class="gj-step gj-a" style="transition-delay:.22s">
+      <span class="gj-ico"><svg viewBox="0 0 24 24"><path d="M15 20v-1.5a3.5 3.5 0 0 0-3.5-3.5h-4A3.5 3.5 0 0 0 4 18.5V20"/><circle cx="9.5" cy="7.5" r="3.2"/><path d="M20 20v-1.5a3.5 3.5 0 0 0-2.6-3.4"/><path d="M15.5 4.6a3.2 3.2 0 0 1 0 6.2"/></svg></span>
+      <span class="gj-tag">Step 03 — Adopt</span>
+      <p class="gj-txt">Adopt with AI Change Management (GenEQ).</p>
+    </article>
+  </div>
+
+  <div class="gj-links gj-a" style="transition-delay:.3s">
+    <a class="gj-link" href="/generative-driven-development/">Explore AI-Driven Development (GenDD) <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+    <a class="gj-link" href="/ai-change-management/">Explore AI Change Management (GenEQ) <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+    <a class="gj-cta" href="/company/contact/">See How We Engage <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</div>
+
+<script>
+(function(){
+var obs=new IntersectionObserver(function(es){
+  for(var i=0;i<es.length;i++){if(es[i].isIntersecting){es[i].target.classList.add('gj-v');obs.unobserve(es[i].target)}}
+},{threshold:0.08});
+var a=document.querySelectorAll('#genroi-journey .gj-a');
+for(var i=0;i<a.length;i++) obs.observe(a[i]);
+})();
+</script>
+</div>
+</div>
+
+
+<div class="grp-sec">
+<div id="genroi-cta">
+<style>
+#genroi-cta{all:initial;display:block;position:relative;background:transparent;font-family:'Open Sans',sans-serif;color:#f0f8ff;width:100%;overflow:visible}
+#genroi-cta *,#genroi-cta *::before,#genroi-cta *::after{box-sizing:border-box;margin:0;padding:0}
+#genroi-cta .gx-wrap{max-width:800px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center;gap:clamp(1rem,2vw,1.5rem)}
+
+#genroi-cta .gx-ey{font-size:clamp(.68rem,.9vw,.78rem);font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#3abdbc;display:flex;align-items:center;gap:.5rem}
+#genroi-cta .gx-ey-dot{width:6px;height:6px;border-radius:50%;background:#3abdbc;animation:grxP 2s ease-in-out infinite}
+@keyframes grxP{0%,100%{opacity:1}50%{opacity:.3}}
+
+#genroi-cta .gx-title{font-family:'Open Sans',sans-serif;font-size:clamp(1.8rem,5.4vw,3.5rem);font-weight:700;line-height:1.12;letter-spacing:-.02em;max-width:22ch;text-wrap:balance;padding-bottom:.05em;background:linear-gradient(90deg,#ffffff 0%,#c7f2f0 45%,#3abdbc 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+
+#genroi-cta .gx-desc{font-size:clamp(.9rem,1.1vw,1rem);font-weight:400;color:rgba(255,255,255,.64);line-height:1.55;max-width:56ch;text-wrap:pretty}
+
+#genroi-cta .gx-btns{display:flex;align-items:center;gap:clamp(.5rem,.9vw,.7rem);flex-wrap:wrap;justify-content:center}
+
+#genroi-cta .gx-btn{display:inline-flex;align-items:center;gap:.5rem;padding:clamp(.75rem,1.2vw,.95rem) clamp(2rem,3.5vw,2.8rem);border-radius:8px;font-family:'Open Sans',sans-serif;font-size:clamp(.9rem,1.15vw,1.05rem);font-weight:700;color:#080a0d;background:#3abdbc;border:none;cursor:pointer;transition:transform .25s,box-shadow .25s,background .25s,gap .25s}
+#genroi-cta .gx-btn:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(58,189,188,.3);background:#44cac9;gap:.7rem}
+#genroi-cta .gx-btn .gx-btn-arrow{transition:transform .25s}
+#genroi-cta .gx-btn.open .gx-btn-arrow{transform:rotate(180deg)}
+
+#genroi-cta .gx-btn-alt{display:inline-flex;align-items:center;gap:.4rem;padding:clamp(.72rem,1.15vw,.9rem) clamp(1.6rem,2.8vw,2.2rem);border-radius:8px;font-size:clamp(.85rem,1.08vw,1rem);font-weight:700;color:rgba(255,255,255,.7);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);text-decoration:none;cursor:pointer;transition:transform .25s,border-color .25s,color .25s,background .25s}
+#genroi-cta .gx-btn-alt:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.2);color:#fff;background:rgba(255,255,255,.07)}
+
+#genroi-cta .gx-trust{display:flex;align-items:center;gap:clamp(.8rem,1.5vw,1.4rem);flex-wrap:wrap;justify-content:center}
+#genroi-cta .gx-trust-item{display:flex;align-items:center;gap:.4rem;font-size:clamp(.72rem,.85vw,.76rem);font-weight:600;color:rgba(255,255,255,.6);white-space:nowrap}
+#genroi-cta .gx-trust-item svg{width:15px;height:15px;stroke:#3abdbc;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+@media(max-width:720px){
+  #genroi-cta .gx-trust{flex-direction:column;align-items:flex-start;gap:.55rem;text-align:left}
+  #genroi-cta .gx-trust-item{white-space:normal;align-items:flex-start}
+  #genroi-cta .gx-trust-item svg{margin-top:.15rem}
+}
+@media(max-width:420px){
+  #genroi-cta .gx-btns{flex-direction:column;align-items:stretch;width:100%;max-width:340px}
+  #genroi-cta .gx-btn,#genroi-cta .gx-btn-alt{justify-content:center}
+}
+
+#genroi-cta .gx-form-panel{width:100%;max-width:100%;max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(.23,1,.32,1),opacity .4s,margin .4s;opacity:0;margin-top:0}
+#genroi-cta .gx-form-panel.open{max-height:3000px;opacity:1;margin-top:clamp(.8rem,1.5vw,1.2rem);overflow:visible}
+
+#genroi-cta .gx-form-card{border-radius:clamp(14px,1.5vw,18px);padding:clamp(1.8rem,3vw,2.8rem) clamp(2rem,4vw,3.5rem);background:#fff;border:none;box-shadow:0 4px 20px rgba(0,0,0,.08);position:relative;overflow:hidden;text-align:left}
+
+/* HubSpot overrides — white card */
+#genroi-cta .gx-form-embed .hs-form{font-family:'Open Sans',sans-serif !important}
+#genroi-cta .gx-form-embed fieldset{max-width:100% !important}
+#genroi-cta .gx-form-embed fieldset.form-columns-1 .hs-form-field,
+#genroi-cta .gx-form-embed fieldset.form-columns-2 .hs-form-field{padding:0 !important}
+#genroi-cta .gx-form-embed fieldset.form-columns-2{display:grid !important;grid-template-columns:1fr 1fr !important;gap:.6rem !important}
+@media(max-width:500px){#genroi-cta .gx-form-embed fieldset.form-columns-2{grid-template-columns:1fr !important}}
+#genroi-cta .gx-form-embed .hs-form-field{margin-bottom:clamp(.5rem,.8vw,.6rem) !important}
+#genroi-cta .gx-form-embed label:not(.hs-error-msg){font-family:'Open Sans',sans-serif !important;font-size:clamp(.58rem,.72vw,.64rem) !important;font-weight:700 !important;color:rgba(26,30,42,.4) !important;letter-spacing:.04em !important;text-transform:uppercase !important;margin-bottom:.2rem !important;display:block !important}
+#genroi-cta .gx-form-embed .hs-input{width:100% !important;padding:clamp(.52rem,.8vw,.65rem) clamp(.7rem,1vw,.85rem) !important;border-radius:8px !important;border:1px solid rgba(26,30,42,.12) !important;background:#f8f9fa !important;color:#1a1e2a !important;font-family:'Open Sans',sans-serif !important;font-size:clamp(.76rem,.95vw,.86rem) !important;outline:none !important;transition:border-color .2s,background .2s,box-shadow .2s !important;-webkit-appearance:none !important}
+#genroi-cta .gx-form-embed .hs-input:focus{border-color:#3abdbc !important;background:#fff !important;box-shadow:0 0 0 3px rgba(58,189,188,.1) !important}
+#genroi-cta .gx-form-embed .hs-input::placeholder{color:rgba(26,30,42,.25) !important}
+#genroi-cta .gx-form-embed select.hs-input{color:rgba(26,30,42,.5) !important}
+#genroi-cta .gx-form-embed textarea.hs-input{min-height:80px !important;resize:vertical !important}
+#genroi-cta .gx-form-embed .hs-submit{margin-top:clamp(.4rem,.6vw,.5rem) !important}
+#genroi-cta .gx-form-embed .hs-button{width:100% !important;padding:clamp(.65rem,1vw,.78rem) !important;border-radius:8px !important;border:none !important;background:#3abdbc !important;color:#fff !important;font-family:'Open Sans',sans-serif !important;font-size:clamp(.82rem,1.05vw,.92rem) !important;font-weight:700 !important;cursor:pointer !important;transition:transform .2s,box-shadow .2s,background .2s !important}
+#genroi-cta .gx-form-embed .hs-button:hover{transform:translateY(-1px) !important;box-shadow:0 6px 24px rgba(58,189,188,.3) !important;background:#2fa8a7 !important}
+#genroi-cta .gx-form-embed .hs-error-msgs{list-style:none !important;padding:0 !important;margin:.15rem 0 0 !important}
+#genroi-cta .gx-form-embed .hs-error-msgs li label,
+#genroi-cta .gx-form-embed .hs-error-msg{color:#e97845 !important;font-size:clamp(.52rem,.65vw,.56rem) !important;font-weight:600 !important;text-transform:none !important;letter-spacing:0 !important}
+#genroi-cta .gx-form-embed .legal-consent-container{margin-top:.4rem !important}
+#genroi-cta .gx-form-embed .legal-consent-container p,
+#genroi-cta .gx-form-embed .legal-consent-container span,
+#genroi-cta .gx-form-embed .legal-consent-container label{font-size:clamp(.5rem,.62vw,.54rem) !important;color:rgba(26,30,42,.3) !important;line-height:1.4 !important;text-transform:none !important;letter-spacing:0 !important;font-weight:400 !important}
+#genroi-cta .gx-form-embed .legal-consent-container a{color:#3abdbc !important}
+#genroi-cta .gx-form-embed .submitted-message{font-family:'Open Sans',sans-serif !important;font-size:clamp(.95rem,1.2vw,1.05rem) !important;font-weight:700 !important;color:#3abdbc !important;text-align:center !important;padding:2rem 1rem !important}
+#genroi-cta .gx-form-embed .hs-richtext{font-size:clamp(.55rem,.7vw,.6rem) !important;color:rgba(26,30,42,.3) !important;line-height:1.4 !important}
+#genroi-cta .gx-form-embed .hs-richtext a{color:#3abdbc !important}
+
+#genroi-cta .gx-a{opacity:0;transform:translateY(18px);filter:blur(5px);transition:opacity .7s ease,transform .7s ease,filter .7s ease}
+#genroi-cta .gx-a.gx-v{opacity:1;transform:translateY(0);filter:blur(0)}
+@media(prefers-reduced-motion:reduce){#genroi-cta .gx-a{opacity:1!important;transform:none!important;filter:none!important}}
+</style>
+
+<div class="gx-wrap">
+
+  <div class="gx-ey gx-a"><div class="gx-ey-dot"></div>Get started</div>
+
+  <h2 class="gx-title gx-a" style="transition-delay:.06s">Stop debating where to start.</h2>
+
+  <p class="gx-desc gx-a" style="transition-delay:.12s">Build a shared, defensible plan for where AI can create value.</p>
+
+  <div class="gx-btns gx-a" style="transition-delay:.18s">
+    <button class="gx-btn" id="gxToggle" type="button" aria-expanded="false" aria-controls="gxPanel">
+      Start Your AI Strategy
+      <svg class="gx-btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+    </button>
+    <a class="gx-btn-alt" href="/generative-driven-development/">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg>
+      Explore AI-Driven Development
+    </a>
+  </div>
+
+  <div class="gx-trust gx-a" style="transition-delay:.24s">
+    <div class="gx-trust-item"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>Strategist-led, AI-powered discovery</div>
+    <div class="gx-trust-item"><svg viewBox="0 0 24 24"><path d="M4 19h16"/><path d="M7 19V11M12 19V6M17 19v-5"/></svg>Prioritized by value, feasibility, and readiness</div>
+    <div class="gx-trust-item"><svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9 16.5 14 18.5 21 12 17 5.5 21 7.5 14 2 9 9 9"/></svg>Executive-ready recommendations</div>
+  </div>
+
+  <div class="gx-form-panel" id="gxPanel" role="region" aria-label="Contact form" aria-hidden="true">
+    <div class="gx-form-card">
+      <div class="gx-form-embed" id="gxHsForm"></div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+(function(){
+var btn=document.getElementById('gxToggle');
+var panel=document.getElementById('gxPanel');
+var loaded=false,sdk=null;
+
+/* HubSpot's embed script is only fetched when the panel is opened, so it never
+   blocks first paint or counts against the initial page weight. */
+function loadSdk(){
+  if(sdk) return sdk;
+  sdk=new Promise(function(res,rej){
+    if(window.hbspt) return res();
+    var s=document.createElement('script');
+    s.src='https://js.hsforms.net/forms/embed/v2.js';
+    s.charset='utf-8';s.async=true;
+    s.onload=res;s.onerror=rej;
+    document.head.appendChild(s);
+  });
+  return sdk;
+}
+
+btn.addEventListener('click',function(){
+  var open=!panel.classList.contains('open');
+  panel.classList.toggle('open',open);
+  btn.classList.toggle('open',open);
+  btn.setAttribute('aria-expanded',open?'true':'false');
+  panel.setAttribute('aria-hidden',open?'false':'true');
+  if(open&&!loaded){
+    loaded=true;
+    loadSdk().then(function(){
+      hbspt.forms.create({
+        portalId:"6632357",
+        formId:"9ba971f2-6cc7-485d-8907-c7afc61ba714",
+        region:"na1",
+        target:"#gxHsForm"
+      });
+    }).catch(function(){
+      loaded=false;
+      document.getElementById('gxHsForm').innerHTML='<p style="font:600 15px/1.5 \'Open Sans\',sans-serif;color:#363943">The form could not load. Email <a href="mailto:hello@hatchworks.com" style="color:#10758b">hello@hatchworks.com</a> and we\'ll get back to you.</p>';
+    });
+  }
+});
+
+var obs=new IntersectionObserver(function(entries){
+  for(var i=0;i<entries.length;i++){
+    if(entries[i].isIntersecting){entries[i].target.classList.add('gx-v');obs.unobserve(entries[i].target)}
+  }
+},{threshold:0.08});
+var anims=document.querySelectorAll('#genroi-cta .gx-a');
+for(var i=0;i<anims.length;i++) obs.observe(anims[i]);
+})();
+</script>
+</div>
+</div>
+
+</div>
+
+				</div>
+				</div>
+				</div>
+						</div>
+				</div>
+				</div>
+				</div>
+<!--tail-->
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/hello-elementor/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+
+<script>
+				( () => {
+					const lazyloadRunObserver = () => {
+						const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+						const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+							entries.forEach( ( entry ) => {
+								if ( entry.isIntersecting ) {
+									let lazyloadBackground = entry.target;
+									if( lazyloadBackground ) {
+										lazyloadBackground.classList.add( 'e-lazyloaded' );
+									}
+									lazyloadBackgroundObserver.unobserve( entry.target );
+								}
+							});
+						}, { rootMargin: '200px 0px 200px 0px' } );
+						lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+							lazyloadBackgroundObserver.observe( lazyloadBackground );
+						} );
+					};
+					const events = [
+						'DOMContentLoaded',
+						'elementor/lazyload/observe',
+					];
+					events.forEach( ( event ) => {
+						document.addEventListener( event, lazyloadRunObserver );
+					} );
+				} )();
+			</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&display=swap">
+<style id="hwts-css">
+.hwts{--hwts-line:rgba(255,255,255,.13);--hwts-bg:rgba(10,16,24,.42);--hwts-label:#71c7d2;--hwts-ease:cubic-bezier(.22,1,.36,1);--hwts-teal:#3abdbc;--hwts-teal-br:#bfefef;--hwts-soft:#1c2028;--hwts-fd:'Space Grotesk','Open Sans',sans-serif;--hwts-logo-filter:brightness(0) invert(1);--hwts-logo-op:.42;--hwts-logo-op-hover:.95}
+.hwts.hwts.hwts{display:block!important;box-sizing:border-box!important;width:100%!important;min-height:295px!important;padding:38px 0 42px!important;margin:0!important;border-top:1px solid var(--hwts-line)!important;border-bottom:1px solid var(--hwts-line)!important;background:var(--hwts-bg)!important}
+.hwts.hwts.hwts *{box-sizing:border-box!important}
+.hwts.hwts.hwts[data-theme="light"]{--hwts-line:rgba(15,23,42,.10)!important;--hwts-bg:transparent!important;--hwts-label:#1f8f8e!important;--hwts-logo-filter:brightness(0)!important;--hwts-logo-op:.5!important;--hwts-logo-op-hover:.9!important}
+.hwts.hwts.hwts[data-bare]{padding:0!important;border:0!important;background:transparent!important;min-height:0!important}
+.hwts.hwts.hwts .hwts-label{display:block!important;margin:0 auto!important;padding:0 16px!important;max-width:60ch!important;text-align:center!important;font-family:var(--hwts-fd)!important;font-size:.75rem!important;font-weight:500!important;letter-spacing:.2em!important;text-transform:uppercase!important;color:var(--hwts-label)!important;opacity:.85!important;line-height:1.4!important;text-wrap:balance!important}
+.hwts.hwts.hwts .hwts-marquee{width:100%!important;margin-top:22px!important;overflow:hidden!important;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)!important;mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)!important}
+.hwts.hwts.hwts .hwts-track{display:flex!important;align-items:center!important;gap:56px!important;width:max-content!important;margin:0!important;padding:0!important;animation:hwts-marq 64s linear infinite}
+.hwts.hwts.hwts .hwts-marquee:hover .hwts-track{animation-play-state:paused}
+.hwts.hwts.hwts .hwts-marquee.is-swipe{overflow-x:auto!important;overflow-y:hidden!important;scrollbar-width:none!important;overscroll-behavior-x:contain!important}
+.hwts.hwts.hwts .hwts-marquee.is-swipe::-webkit-scrollbar{width:0!important;height:0!important;display:none!important}
+.hwts.hwts.hwts .hwts-track.is-swipe{animation:none}
+.hwts.hwts.hwts .hwts-logo{flex:0 0 auto!important;width:176px!important;height:176px!important;display:flex!important;align-items:center!important;justify-content:center!important;margin:0!important;padding:0!important;border:0!important;background:none!important;text-decoration:none!important;transition:transform .4s var(--hwts-ease)!important}
+.hwts.hwts.hwts .hwts-logo img{display:block!important;width:100%!important;height:100%!important;max-width:none!important;margin:0!important;object-fit:contain!important;filter:var(--hwts-logo-filter)!important;opacity:var(--hwts-logo-op)!important;transition:opacity .3s var(--hwts-ease)!important;box-shadow:none!important;border-radius:0!important}
+.hwts.hwts.hwts .hwts-logo:hover{transform:translateY(-3px)!important}
+.hwts.hwts.hwts .hwts-logo:hover img{opacity:var(--hwts-logo-op-hover)!important}
+.hwts.hwts.hwts .hwts-logo--cs{position:relative!important}
+.hwts.hwts.hwts .hwts-logo--cs::after{content:""!important;position:absolute!important;top:2px!important;right:-2px!important;width:5px!important;height:5px!important;border-radius:50%!important;background:var(--hwts-teal)!important;opacity:0!important;transform:scale(.6)!important;transition:opacity .3s var(--hwts-ease),transform .3s var(--hwts-ease)!important}
+.hwts.hwts.hwts .hwts-logo--cs:hover::after{opacity:.9!important;transform:scale(1)!important}
+.hwts.hwts.hwts .hwts-logo:focus-visible{outline:2px solid var(--hwts-teal)!important;outline-offset:4px!important;border-radius:6px!important}
+.hwts.hwts.hwts .hwts-logo:focus-visible img{opacity:1!important}
+@keyframes hwts-marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (pointer:coarse){.hwts.hwts.hwts .hwts-logo{min-height:44px!important}}
+@media (min-width:2100px){.hwts.hwts.hwts .hwts-logo{width:200px!important;height:200px!important}.hwts.hwts.hwts .hwts-track{gap:46px!important}}
+@media (max-width:600px){.hwts.hwts.hwts{min-height:255px!important}.hwts.hwts.hwts .hwts-logo{width:136px!important;height:136px!important}.hwts.hwts.hwts .hwts-track{gap:36px!important}}
+@media (max-width:400px){.hwts.hwts.hwts .hwts-logo{width:116px!important;height:116px!important}}
+
+.hwts-tip{position:fixed!important;top:0;left:0;max-width:280px!important;padding:14px 16px!important;border-radius:6px!important;background:rgba(12,15,20,.96)!important;border:1px solid rgba(58,189,188,.35)!important;color:#fff!important;font-family:'Open Sans',sans-serif!important;font-size:.9rem!important;line-height:1.45!important;letter-spacing:-.005em!important;text-wrap:pretty!important;pointer-events:none!important;opacity:0!important;transform:translate(-50%,calc(-100% - 16px)) scale(.94)!important;transform-origin:center bottom!important;transition:opacity .28s cubic-bezier(.22,1,.36,1),transform .28s cubic-bezier(.22,1,.36,1)!important;z-index:99990!important;box-shadow:0 24px 50px -24px rgba(0,0,0,.8)!important;box-sizing:border-box!important}
+.hwts-tip.is-on{opacity:1!important;transform:translate(-50%,calc(-100% - 16px)) scale(1)!important}
+.hwts-tip::before{content:""!important;position:absolute!important;left:50%!important;bottom:-6px!important;width:11px!important;height:11px!important;background:rgba(12,15,20,.96)!important;border-right:1px solid rgba(58,189,188,.35)!important;border-bottom:1px solid rgba(58,189,188,.35)!important;transform:translateX(-50%) rotate(45deg)!important}
+.hwts-tip.is-card{max-width:none!important;width:228px!important;padding:0!important;overflow:hidden!important;transform:translate(-50%,calc(-100% - 14px)) scale(.94)!important}
+.hwts-tip.is-card.is-on{transform:translate(-50%,calc(-100% - 14px)) scale(1)!important}
+.hwts-tip-media{display:block!important;position:relative!important;aspect-ratio:16/9!important;overflow:hidden!important;background:#1c2028!important}
+.hwts-tip-media img{display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;margin:0!important}
+.hwts-tip-play{position:absolute!important;top:8px!important;right:8px!important;width:26px!important;height:26px!important;border-radius:50%!important;background:rgba(12,15,20,.7)!important;color:#3abdbc!important;display:flex!important;align-items:center!important;justify-content:center!important;font-size:15px!important}
+.hwts-tip-cta{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:10px!important;padding:11px 14px!important;font-family:'Space Grotesk','Open Sans',sans-serif!important;font-size:.75rem!important;font-weight:600!important;letter-spacing:.07em!important;text-transform:uppercase!important;color:#3abdbc!important}
+.hwts-tip-cta i{font-size:15px!important}
+@media (hover:none){.hwts-tip{display:none!important}}
+</style>
+<script id="hwts-js">
+(function(){
+  if(window.__hwtsBooted) return;
+  window.__hwtsBooted = true;
+
+  /* ---------- THE LOGO LIST · edit here ----------
+     name  : alt text and accessible name
+     logo  : SVG url (144x144, #404040)
+     tip   : hover text
+     href  : case study url (optional; makes the logo a link with a hover card)
+     card  : 16:9 image for the hover card (optional, only with href) */
+  var HW_TRUST_LOGOS = [
+    {"name":"Cox","logo":"/wp-content/uploads/2026/02/COX.svg","tip":"Velocity up almost 300% with bugs cut to near zero. Read the COX story.","href":"https://hatchworks.com/case-studies/helping-deliver-real-time-fleet-insights-with-retrieval-augmented-generation-rag/","card":"/wp-content/uploads/2024/10/cox2m--768x432.jpg"},
+    {"name":"Dun & Bradstreet","logo":"/wp-content/uploads/2026/10/db.svg","tip":"Global business data and analytics leader partnering with HatchWorks AI."},
+    {"name":"TrueBlue","logo":"/wp-content/uploads/2026/02/Trueblue.svg","tip":"A game-changer for our software development practice. President and CEO.","href":"https://hatchworks.com/case-studies/"},
+    {"name":"AT&T","logo":"/wp-content/uploads/2026/02/ATYT.svg","tip":"Global connectivity leader partnering with HatchWorks AI."},
+    {"name":"Aero Star","logo":"/wp-content/uploads/2026/02/Aerostar.svg","tip":"An assistant our team actually trusts. AVA keeps knowledge inside their walls.","href":"https://hatchworks.com/case-studies/ai-virtual-assistant-aircraft-maintenance/","card":"/wp-content/uploads/2025/12/aero-thumbnail-768x432.jpg"},
+    {"name":"DronePort","logo":"/wp-content/uploads/2026/02/Droneport.svg","tip":"Not scraping the web, pulling real-time ADS-B data. CEO, DronePort Network.","href":"https://hatchworks.com/case-studies/ai-airspace-insights-made-simple/","card":"/wp-content/uploads/2026/09/meerir-new.jpg"},
+    {"name":"PwC","logo":"/wp-content/uploads/2026/10/pwc.svg","tip":"Global professional services firm partnering with HatchWorks AI."},
+    {"name":"Diebold Nixdorf","logo":"/wp-content/uploads/2026/02/Diebold-Nixdorf.svg","tip":"A true product partner, not just a delivery shop. VP, Global Product Management.","href":"https://hatchworks.com/case-studies/diebold-nixdorf/","card":"/wp-content/uploads/2023/11/diebold-hatchworks-jpg.webp"},
+    {"name":"Kemper","logo":"/wp-content/uploads/2026/02/KEMPER.svg","tip":"Insurance leader partnering with HatchWorks AI."},
+    {"name":"DesignIntelligence","logo":"/wp-content/uploads/2026/02/Design-Intelligence.svg","tip":"Exactly what you said, in exactly the budget and timeline. Managing Partner.","href":"https://hatchworks.com/case-studies/designintelligence/","card":"/wp-content/uploads/2023/11/design-intelligence-hatchworks-768x432.jpg"},
+    {"name":"Vanco","logo":"/wp-content/uploads/2026/02/Vanco.svg","tip":"A strong philosophy and core fundamentals that lift the whole team. CPTO.","href":"https://hatchworks.com/case-studies/from-ad-hoc-ai-to-enterprise-operating-model/","card":"/wp-content/uploads/2026/03/Vanco-GenDD-1-768x432.jpg"},
+    {"name":"Xometry","logo":"/wp-content/uploads/2026/10/xometry.svg","tip":"AI-powered manufacturing marketplace partnering with HatchWorks AI."},
+    {"name":"Juice Plus+","logo":"/wp-content/uploads/2026/02/Juice-Plus.svg","tip":"Global user research turned into a clear product roadmap. Read the story.","href":"https://hatchworks.com/case-studies/juice-plus/","card":"/wp-content/uploads/2023/11/juice-plus-hatchworks-768x432.jpg"},
+    {"name":"Recruitics","logo":"/wp-content/uploads/2026/02/Recruitics.svg","tip":"An AI agent that makes every recruitment dollar work harder. Read the story.","href":"https://hatchworks.com/case-studies/empowering-recruitment-marketing-ai-agents-smarter-hiring/","card":"/wp-content/uploads/2025/03/recruitics-768x432.jpg"},
+    {"name":"Anchor Healthcare","logo":"/wp-content/uploads/2026/02/Anchor-Healthcare.svg","tip":"Combined best-in-class tools into something that works, and fast. CTO.","href":"https://hatchworks.com/case-studies/ai-driven-video-platform-improves-healthcare-literacy-at-scale/","card":"/wp-content/uploads/2025/07/anchor-768x432.jpg"},
+    {"name":"Integrated Care Solutions","logo":"/wp-content/uploads/2026/02/ICS.svg","tip":"Cost of care down 11% and length of stay down 25%. Read the story.","href":"https://hatchworks.com/case-studies/ics/","card":"/wp-content/uploads/2023/11/ics-hatchworks-768x432.jpg"},
+    {"name":"NV5","logo":"/wp-content/uploads/2026/02/NV5.svg","tip":"Engineering and support teams rated fantastic by their Software Engineering Director."},
+    {"name":"AdventHealth","logo":"/wp-content/uploads/2026/02/Advent-Health.svg","tip":"Decentralized system delivered ahead of schedule. Director of Program Management."},
+    {"name":"Cricket Wireless","logo":"/wp-content/uploads/2026/02/Cricket.svg","tip":"Wireless carrier partnering with HatchWorks AI."},
+    {"name":"PeopleScout","logo":"/wp-content/uploads/2026/02/Peoplescout.svg","tip":"50+ nearshore engineers across 5 years accelerating their transformation."},
+    {"name":"CEO Coaching International","logo":"/wp-content/uploads/2026/10/ceoci.svg","tip":"An AI coaching assistant taken from proof of concept to production. Read the story.","href":"https://hatchworks.com/case-studies/scaling-ai-coaching-assistant-for-top-ceos/","card":"/wp-content/uploads/2025/07/ceoci-768x432.jpg"},
+    {"name":"DIRECTV","logo":"/wp-content/uploads/2026/02/DIRECTV.svg","tip":"Streaming provider scaling AI-driven personalization across millions of subscribers."},
+    {"name":"Spring Hills","logo":"/wp-content/uploads/2026/02/Springhills.svg","tip":"90-day readmissions now under 10% for its managed population. Read the story.","href":"https://hatchworks.com/case-studies/springhills/","card":"/wp-content/uploads/2023/11/springhills-hatchworks-768x432.jpg"},
+    {"name":"Viasat","logo":"/wp-content/uploads/2026/02/Viasat.svg","tip":"Satellite and connectivity leader modernizing data pipelines for AI."},
+    {"name":"Clearway Health","logo":"/wp-content/uploads/2026/02/Clearway-Health.svg","tip":"99% faster client onboarding for specialty pharmacy. Read the story.","href":"https://hatchworks.com/case-studies/proprietary-patient-system-faster-onboarding/","card":"/wp-content/uploads/2025/02/cwh-hw-768x432.jpg"},
+    {"name":"World 50","logo":"/wp-content/uploads/2026/10/50.svg","tip":"Executive peer community partnering with HatchWorks AI."},
+    {"name":"Tevora","logo":"/wp-content/uploads/2026/02/Tevora.svg","tip":"Cybersecurity and compliance firm partnering with HatchWorks AI."},
+    {"name":"Hinge Health","logo":"/wp-content/uploads/2026/02/Hinge-Health.svg","tip":"Digital health platform building AI experiences patients trust."},
+    {"name":"Rollins","logo":"/wp-content/uploads/2026/02/Rollins.svg","tip":"Home-services leader applying predictive AI to cut recurring issues."},
+    {"name":"Stanley Black and Decker","logo":"/wp-content/uploads/2026/02/Stanley-Black-and-Decker.svg","tip":"Global tools manufacturer modernizing engineering with AI."},
+    {"name":"WealthAbility","logo":"/wp-content/uploads/2026/02/Wealthability.svg","tip":"Tax and wealth projections automated for the sales team. Read the story.","href":"https://hatchworks.com/case-studies/scaling-financial-health-with-a-shift-to-digital-sales-and-automation/","card":"/wp-content/uploads/2021/07/wealthability-jpg.webp"},
+    {"name":"Charter","logo":"/wp-content/uploads/2026/02/Charter.svg","tip":"Connectivity provider accelerating delivery with nearshore AI engineering teams."},
+    {"name":"Kimberly Clark","logo":"/wp-content/uploads/2026/02/Kimberly-Clark.svg","tip":"Global consumer brand applying AI to operations and analytics."},
+    {"name":"Carter's","logo":"/wp-content/uploads/2026/02/Carters.svg","tip":"Specialty retailer using AI to personalize and forecast demand."},
+    {"name":"Capital Choice","logo":"/wp-content/uploads/2026/02/Capital-Choice.svg","tip":"It was that personal touch that keeps us coming back. SVP.","href":"https://hatchworks.com/case-studies/innovative-platform-next-generation-sales-enablement-financial-wellness/","card":"/wp-content/uploads/2023/11/capital-choice-thumbnail-768x432.jpg"},
+    {"name":"Anthem","logo":"/wp-content/uploads/2026/02/Anthem.svg","tip":"Insurance leader putting AI to work across claims and analytics."},
+    {"name":"The Honey Baked Ham","logo":"/wp-content/uploads/2026/02/The-Honey-Baked-Ham.svg","tip":"Delivered an easy-to-use, stable enrollment platform ahead of plan. VP of Technology."},
+    {"name":"Fleetcor","logo":"/wp-content/uploads/2026/02/Fleetcor.svg","tip":"Payments leader scaling AI across financial operations."}
+  ];
+  var LABEL = 'Trusted by industry leaders';
+
+  function esc(s){ return String(s == null ? '' : s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+  function itemHTML(l){
+    var img = '<img loading="lazy" width="192" height="192" src="' + esc(l.logo) + '" alt="' + esc(l.name) + '" loading="lazy" decoding="async">';
+    if(l.href){
+      return '<a class="hwts-logo hwts-logo--cs" href="' + esc(l.href) + '"' + (l.card ? ' data-cs-img="' + esc(l.card) + '"' : '') +
+        ' data-tip="' + esc(l.tip) + '" aria-label="' + esc(l.name) + ' case study" target="_self">' + img + '</a>';
+    }
+    return '<span class="hwts-logo" data-tip="' + esc(l.tip) + '">' + img + '</span>';
+  }
+
+  var mqReduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)');
+  var reduced = !!(mqReduce && mqReduce.matches);
+  var canHover = !window.matchMedia || window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+
+  /* ---------- marquee: same two drive modes as the home strip ---------- */
+  function drive(track){
+    var originals = Array.prototype.slice.call(track.children);
+    var ghost = document.createDocumentFragment();
+    originals.forEach(function(n){
+      var c = n.cloneNode(true);
+      c.setAttribute('aria-hidden','true');
+      if(c.tagName === 'A') c.setAttribute('tabindex','-1');
+      c.querySelectorAll('a,[tabindex]').forEach(function(k){ k.setAttribute('tabindex','-1'); });
+      c.removeAttribute('data-tip');
+      ghost.appendChild(c);
+    });
+    track.appendChild(ghost);
+    var marquee = track.parentNode;
+    var swipe = reduced || !window.matchMedia('(hover:hover)').matches;
+
+    if(swipe){
+      marquee.classList.add('is-swipe');
+      track.classList.add('is-swipe');
+      var half = 0, auto = null, held = false, idle = null;
+      var measure = function(){
+        half = track.scrollWidth / 2;
+        if(half > 2 && marquee.scrollLeft < 1) marquee.scrollLeft = 1;
+      };
+      measure();
+      if(window.ResizeObserver) new ResizeObserver(measure).observe(track);
+      var wrap = function(){
+        if(half < 2) return;
+        if(marquee.scrollLeft >= half) marquee.scrollLeft -= half;
+        else if(marquee.scrollLeft <= 0) marquee.scrollLeft += half;
+      };
+      marquee.addEventListener('scroll', wrap, {passive:true});
+      if(!reduced){
+        var last = 0;
+        var step = function(now){
+          auto = requestAnimationFrame(step);
+          if(held){ last = now; return; }
+          if(!last) last = now;
+          var dt = Math.min(now - last, 64);
+          last = now;
+          marquee.scrollLeft += dt * 0.055;
+          wrap();
+        };
+        var run = function(){ if(!auto){ last = 0; auto = requestAnimationFrame(step); } };
+        var halt = function(){ if(auto){ cancelAnimationFrame(auto); auto = null; } };
+        var hold = function(){ held = true; clearTimeout(idle); };
+        var release = function(){ if(!held) return; clearTimeout(idle); idle = setTimeout(function(){ held = false; }, 1400); };
+        marquee.addEventListener('touchstart', hold, {passive:true});
+        marquee.addEventListener('pointerdown', hold, {passive:true});
+        marquee.addEventListener('touchend', release, {passive:true});
+        marquee.addEventListener('touchcancel', release, {passive:true});
+        marquee.addEventListener('pointerup', release, {passive:true});
+        marquee.addEventListener('scroll', release, {passive:true});
+        if('IntersectionObserver' in window){
+          var live = false, onScreen = false;
+          new IntersectionObserver(function(en){
+            en.forEach(function(x){
+              onScreen = x.isIntersecting;
+              if(onScreen){ live = true; run(); } else if(live){ halt(); }
+            });
+          }, {threshold:0}).observe(marquee);
+          document.addEventListener('visibilitychange', function(){ if(document.hidden) halt(); else if(onScreen) run(); });
+        } else {
+          run();
+          document.addEventListener('visibilitychange', function(){ if(document.hidden) halt(); else run(); });
+        }
+      }
+    } else {
+      var pace = function(){
+        var w = track.scrollWidth / 2;
+        if(w > 10) track.style.animationDuration = Math.round(w / 100) + 's';
+      };
+      pace();
+      if(window.ResizeObserver) new ResizeObserver(pace).observe(track);
+      if('IntersectionObserver' in window){
+        var seen = false;
+        new IntersectionObserver(function(en){
+          en.forEach(function(x){
+            if(x.isIntersecting){ seen = true; track.style.animationPlayState = ''; }
+            else if(seen){ track.style.animationPlayState = 'paused'; }
+          });
+        }, {threshold:0}).observe(track);
+      }
+    }
+  }
+
+  /* ---------- hover card / tooltip (pointer only; every case logo is a real link) ---------- */
+  var tip = null, hideTimer = null, overTip = false, overEl = false;
+  function ensureTip(){
+    if(tip || !canHover) return;
+    tip = document.createElement('div');
+    tip.className = 'hwts-tip';
+    tip.setAttribute('role','presentation');
+    tip.setAttribute('aria-hidden','true');
+    document.body.appendChild(tip);
+    tip.addEventListener('mouseenter', function(){ overTip = true; clearTimeout(hideTimer); });
+    tip.addEventListener('mouseleave', function(){ overTip = false; scheduleHide(); });
+    window.addEventListener('scroll', function(){
+      if(tip.classList.contains('is-on')){ overEl = false; overTip = false; tip.classList.remove('is-on','is-card'); }
+    }, {passive:true});
+  }
+  function scheduleHide(){
+    clearTimeout(hideTimer);
+    hideTimer = setTimeout(function(){ if(!overTip && !overEl) tip.classList.remove('is-on','is-card'); }, 180);
+  }
+  function place(x, y){
+    var w = tip.offsetWidth || 260, pad = 12;
+    var min = w/2 + pad, max = (document.documentElement.clientWidth || window.innerWidth) - w/2 - pad;
+    tip.style.left = Math.max(min, Math.min(x, max)) + 'px';
+    tip.style.top = Math.max(y, tip.offsetHeight + pad) + 'px';
+  }
+  function bindTips(scope){
+    if(!canHover) return;
+    ensureTip();
+    scope.querySelectorAll('[data-tip]').forEach(function(el){
+      var url = el.getAttribute('href');
+      var isCase = el.classList.contains('hwts-logo--cs') && url;
+      el.addEventListener('mouseenter', function(e){
+        overEl = true;
+        clearTimeout(hideTimer);
+        if(isCase){
+          var img = el.getAttribute('data-cs-img'), html = '';
+          if(img){
+            html += '<span class="hwts-tip-media"><img src="' + esc(img) + '" alt="" loading="lazy" decoding="async">' +
+                    '<span class="hwts-tip-play"><i class="ti ti-arrow-up-right"></i></span></span>';
+          }
+          html += '<span class="hwts-tip-cta"><span>View case study</span><i class="ti ti-arrow-right"></i></span>';
+          tip.innerHTML = html;
+          tip.classList.add('is-card');
+          var r = el.getBoundingClientRect();
+          place(r.left + r.width/2, r.top);
+        } else {
+          tip.classList.remove('is-card');
+          tip.textContent = el.getAttribute('data-tip') || '';
+          place(e.clientX, e.clientY);
+        }
+        tip.classList.add('is-on');
+      });
+      el.addEventListener('mousemove', function(e){ if(!isCase) place(e.clientX, e.clientY); }, {passive:true});
+      el.addEventListener('mouseleave', function(){ overEl = false; scheduleHide(); });
+    });
+  }
+
+  /* ---------- mount every [data-hw-trust] slot ---------- */
+  function mount(slot){
+    if(slot.getAttribute('data-hwts-ready')) return;
+    slot.setAttribute('data-hwts-ready','1');
+    slot.classList.add('hwts');
+    var label = slot.getAttribute('data-label') || LABEL;
+    if(!slot.getAttribute('aria-label')) slot.setAttribute('aria-label', label);
+    slot.setAttribute('role','region');
+    slot.innerHTML = '<span class="hwts-label">' + esc(label) + '</span>' +
+      '<div class="hwts-marquee"><div class="hwts-track">' + HW_TRUST_LOGOS.map(itemHTML).join('') + '</div></div>';
+    var track = slot.querySelector('.hwts-track');
+    drive(track);
+    bindTips(slot);
+  }
+  /* slots can live in the page or inside an open shadow root (some page widgets isolate their markup that way) */
+  function roots(){
+    var out = [document];
+    document.querySelectorAll('*').forEach(function(e){ if(e.shadowRoot) out.push(e.shadowRoot); });
+    return out;
+  }
+  function mountAll(){
+    var css = document.getElementById('hwts-css');
+    roots().forEach(function(root){
+      var slots = root.querySelectorAll('[data-hw-trust]');
+      if(!slots.length) return;
+      if(root !== document && css && !root.querySelector('#hwts-css')) root.appendChild(css.cloneNode(true));
+      slots.forEach(mount);
+    });
+  }
+  window.HWTrustStrip = { mountAll: mountAll, logos: HW_TRUST_LOGOS };
+
+  mountAll();
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', mountAll);
+  window.addEventListener('load', mountAll);
+  /* Elementor popups and the editor preview render widgets late */
+  if(window.jQuery) jQuery(window).on('elementor/frontend/init', function(){
+    if(window.elementorFrontend && elementorFrontend.hooks) elementorFrontend.hooks.addAction('frontend/element_ready/html.default', mountAll);
+  });
+})();
+</script>
+

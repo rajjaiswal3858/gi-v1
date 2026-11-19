@@ -1,0 +1,7 @@
+# build output (regenerate with: npm run build)
+dist/
+node_modules/
+.vercel/
+.env*
+.DS_Store
+Thumbs.db

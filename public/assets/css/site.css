@@ -1,0 +1,66 @@
+/* Shared styles for the pieces the static replica adds or drives itself (see /assets/js/site.js).
+   Everything else is the mirrored Elementor / page CSS, loaded before this file. */
+
+/* ---------- images the reference site no longer serves ---------- */
+img.hw-img-missing { visibility: hidden; }
+
+/* ---------- Load More ---------- */
+.hw-loaded-in { animation: hwLoadedIn .45s cubic-bezier(.2, .8, .2, 1) both; }
+@keyframes hwLoadedIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+.e-load-more-pagination-loading .elementor-button-wrapper .elementor-button { pointer-events: none; opacity: .65; }
+.e-load-more-pagination-loading .e-load-more-spinner { display: flex; justify-content: center; margin-top: 16px; }
+.e-load-more-pagination-loading .e-load-more-spinner svg,
+.e-load-more-pagination-loading .e-load-more-spinner i { animation: hwSpin 1s linear infinite; }
+@keyframes hwSpin { to { transform: rotate(360deg); } }
+
+/* ---------- blog filters ---------- */
+.elementor-widget-loop-grid .elementor-loop-container { transition: opacity .18s ease; }
+.elementor-widget-loop-grid.hw-filter-loading .elementor-loop-container { opacity: .45; pointer-events: none; }
+.e-loop-nothing-found-message { padding: 48px 16px; text-align: center; font-size: 18px; color: #5b6472; }
+.jet-filters-pagination { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px; }
+.jet-filters-pagination__link, .jet-filters-pagination__dots { cursor: pointer; user-select: none; }
+.jet-filters-pagination__dots { cursor: default; }
+.jet-filters-pagination__link:focus-visible { outline: 2px solid #3abdbc; outline-offset: 2px; }
+.jet-date-range__control[type="date"] { min-height: 0; }
+
+/* ---------- YouTube video widget ---------- */
+.elementor-widget-video .elementor-wrapper { aspect-ratio: 16 / 9; }
+.elementor-widget-video iframe.elementor-video { display: block; width: 100%; height: 100%; border: 0; }
+
+/* ---------- 404 ---------- */
+.hw404 {
+  min-height: 72vh; display: flex; align-items: center; justify-content: center;
+  padding: clamp(140px, 18vh, 200px) 24px 96px; color: #fff; text-align: center;
+  background:
+    radial-gradient(60% 55% at 78% 18%, rgba(16, 117, 139, .55), transparent 70%),
+    radial-gradient(45% 40% at 12% 85%, rgba(58, 189, 188, .16), transparent 70%),
+    #0c1016;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+.hw404-inner { max-width: 720px; }
+.hw404 .hw404-eyebrow { margin: 0 0 18px; font-family: 'Space Grotesk', 'Open Sans', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; color: #3abdbc; }
+.hw404 .hw404-title { margin: 0 0 18px; font-size: clamp(36px, 6vw, 68px); font-weight: 800; line-height: 1.05; letter-spacing: -.02em; color: #fff; }
+.hw404 .hw404-copy { margin: 0 auto 36px; max-width: 520px; font-size: 18px; line-height: 1.6; color: #c9ccd3; }
+.hw404-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.hw404 a.hw404-btn {
+  display: inline-flex; align-items: center; height: 48px; padding: 0 22px; border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, .18); color: #fff; font-size: 15px; font-weight: 700; text-decoration: none;
+  transition: background-color .15s ease, border-color .15s ease, color .15s ease, transform .15s ease;
+}
+.hw404 a.hw404-btn:hover, .hw404 a.hw404-btn:focus-visible { border-color: #3abdbc; color: #bfefef; transform: translateY(-1px); }
+.hw404 a.hw404-btn--primary { background: #3abdbc; border-color: #3abdbc; color: #151920; }
+.hw404 a.hw404-btn--primary:hover, .hw404 a.hw404-btn--primary:focus-visible { background: #bfefef; border-color: #bfefef; color: #151920; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hw-loaded-in { animation: none; }
+  .hw404-btn { transition: none; }
+}
+
+/* Date-range filter: the native date picker needs more room than the original's short text boxes. */
+.jet-date-range__inputs:has(.jet-date-range__control[type="date"]) { display: flex; flex-direction: column; gap: 8px; }
+.jet-date-range__control[type="date"] { width: 100% !important; max-width: none !important; color-scheme: dark; }
+
+/* A few pages on the reference site scroll sideways on phones (marquee rows wider than the
+   viewport). Clipping the page's horizontal overflow removes that without changing any layout;
+   `clip` (unlike `hidden`) keeps position: sticky working. */
+html, body { overflow-x: clip; }
